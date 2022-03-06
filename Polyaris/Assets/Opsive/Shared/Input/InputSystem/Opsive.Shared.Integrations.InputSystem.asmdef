@@ -1,9 +1,8 @@
 {
-    "name": "Opsive.Shared",
-    "rootNamespace": "",
+    "name": "Opsive.Shared.Input.UnityInputSystem",
     "references": [
-        "Unity.TextMeshPro",
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "Opsive.Shared"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
