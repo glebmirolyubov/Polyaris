@@ -24,11 +24,11 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  - 0
+  - 0
   - 205
   - 1024
   - 1024
-  - 0
-  - 0
   - 0
   - 0
   - 0
@@ -56,6 +56,8 @@ MonoBehaviour:
   - UI
   - 
   - 
+  - PostProcessing
+  - Not in Reflection
   - PW_VFX
   - PW_Object_Small
   - PW_Object_Medium
@@ -72,15 +74,15 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - MovingPlatform
+  - VisualEffect
+  - Overlay
+  - SubCharacter
+  - Character
   m_shadowLayerDistances:
+  - 0
+  - 0
   - 0
   - 0
   - 0
@@ -93,8 +95,6 @@ MonoBehaviour:
   - 102
   - 512
   - 512
-  - 0
-  - 0
   - 0
   - 0
   - 0

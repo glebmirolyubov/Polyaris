@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Gaia Ocean
-  m_Shader: {fileID: 4800000, guid: bcb8ab61b454e43759e4aed562a63ef0, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e83b1a7290ecf481488842b2ccfd5628, type: 3}
   m_ShaderKeywords: _DISABLE_DECALS _DISABLE_SSR _DISABLE_SSR_TRANSPARENT _DOUBLESIDED_ON
     _ENABLE_FOG_ON_TRANSPARENT _PW_SF_SSS_ON _PW_SF_WAVE_PEAK_ON _PW_SSS_ON _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalLayer1:
-        m_Texture: {fileID: 2800000, guid: ba8b90b254eca554697a571d28aa6b1c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2b558bab7c9a3284191fc5fdff992601, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalLayer2:
@@ -51,7 +51,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WaterDepthRamp:
-        m_Texture: {fileID: 2800000, guid: 963c350b718c6414e96f8c5692f060b1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -84,11 +84,11 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _FoamBubbblesScale: 0.5
-    - _FoamBubblesStrength: 0.8
-    - _FoamBubblesTile: 1536
+    - _FoamBubblesStrength: 0.76
+    - _FoamBubblesTile: 2048
     - _FoamDepth: 1
-    - _FoamEdge: 0.25
-    - _FoamMoveSpeed: 0.3
+    - _FoamEdge: 0.4
+    - _FoamMoveSpeed: 0.313
     - _FoamStrength: 2
     - _FoamTexTile: 256
     - _Foam_Metallic: 0.4
@@ -97,16 +97,16 @@ Material:
     - _NormalFadeDistance: 300
     - _NormalFadeStart: 50
     - _NormalLayer0: 0.4
-    - _NormalLayer0Scale: 0.4
+    - _NormalLayer0Scale: 0.1
     - _NormalLayer1: 0.6
-    - _NormalLayer1Scale: 0.6
-    - _NormalLayer2Scale: 0.4
+    - _NormalLayer1Scale: 0.0825
+    - _NormalLayer2Scale: 0.02
     - _NormalMoveScale: 0.0003
-    - _NormalSpeed: 1.25
+    - _NormalSpeed: 1
     - _NormalTile: 512
     - _OpaqueCullMode: 2
     - _PW_DstBlend: 0
-    - _PW_MainLightIntensity: 2.3
+    - _PW_MainLightIntensity: 1300
     - _PW_SSS: 1
     - _PW_SSSDistortion: 0.34
     - _PW_SSSPower: 1
@@ -117,7 +117,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _Smoothness: 0.8
+    - _Smoothness: 0.83
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -133,7 +133,7 @@ Material:
     - _SurfaceType: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
-    - _TransparentDepth: 0.1
+    - _TransparentDepth: 0.3
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentMin: 0
@@ -147,23 +147,23 @@ Material:
     - _WaveLength: 128
     - _WavePeakToggle: 1
     - _WaveShoreClamp: 0
-    - _WaveSpeed: 12.5
+    - _WaveSpeed: 10
     - _WaveSteepness: 0.1
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _AmbientColor: {r: 0.70933735, g: 0.75, b: 0.75, a: 1}
+    - _AmbientColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EdgeWaterColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _PW_MainLightColor: {r: 1, g: 0.86903584, b: 0.8074487, a: 1}
-    - _PW_MainLightDir: {r: -0, g: 0.7660446, b: -0.64278746, a: 0}
+    - _PW_MainLightColor: {r: 1, g: 0.55024546, b: 0.24998036, a: 1}
+    - _PW_MainLightDir: {r: 0.8365165, g: 0.2588191, b: 0.48296306, a: 0}
     - _PW_MainLightSpecular: {r: 0.3137255, g: 0.27189302, b: 0.22345544, a: 1}
     - _PW_SSSTint: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectionColor: {r: 0.1, g: 0.12, b: 0.17, a: 1}
-    - _UnderWaterColor: {r: 0.23371306, g: 0.36069658, b: 0.49056602, a: 1}
+    - _UnderWaterColor: {r: 0.40161088, g: 0.70033914, b: 0.8962264, a: 1}
     - _WaveDirection: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &712449491157554370
