@@ -19,7 +19,7 @@ Shader "Ultimate Character Controller/Demo/ShieldBubble"
 	{
 		Tags{ "RenderType" = "Transparent"  "Queue" = "Transparent+0" "IgnoreProjector" = "True" "IsEmissive" = "true"  }
 		Cull Off
-		GrabPass{ }
+	/* 	GrabPass{ } */
 		CGPROGRAM
 		#include "UnityStandardUtils.cginc"
 		#include "UnityShaderVariables.cginc"
