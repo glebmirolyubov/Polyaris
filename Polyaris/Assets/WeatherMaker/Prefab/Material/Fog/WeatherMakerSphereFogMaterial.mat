@@ -63,6 +63,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AmbientLightMultiplier: 1
     - _BumpScale: 1
@@ -104,7 +105,7 @@ Material:
     - _FogSpherePosition: {r: 0, g: 0, b: 0, a: 0}
     - _WeatherMakerFogBoxCenter: {r: 0, g: 0, b: 0, a: 0}
     - _WeatherMakerFogColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WeatherMakerFogNoiseVelocity: {r: 1.7746965, g: 2.9578292, b: 4.1409597, a: 0}
+    - _WeatherMakerFogNoiseVelocity: {r: 0.2841168, g: 0.4735278, b: 0.66293913, a: 0}
     - _WeatherMakerFogSpherePosition: {r: 0, g: 0, b: 0, a: 0}
     - _WeatherMakerFogVolumePower: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

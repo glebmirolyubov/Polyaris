@@ -15,14 +15,14 @@ MonoBehaviour:
   Speed: 0
   NightSpeed: 0
   UpdateInterval: 0.03
-  TimeOfDay: 47190.77
-  TimeOfDayLabel: 01:06 PM
+  TimeOfDay: 10313
+  TimeOfDayLabel: 02:51 AM
   Year: 2017
   Month: 3
   Day: 13
   AdjustDateWhenDayEnds: 1
   TimeZoneOffsetSeconds: -21600
-  Latitude: 44
+  Latitude: -55.79999923706055
   Longitude: -111.79239654541016
   AxisTilt: 23.439
   DayDawnDuskNightGradient:
