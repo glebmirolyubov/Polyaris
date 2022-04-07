@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WeatherMakerFullScreenFogProfile_Height
   m_EditorClassIdentifier: 
   FogMode: 2
-  FogDensity: 0.1
+  FogDensity: 0.412
   FogFactorMultiplier: 1
   FogStartDepth: 0
   FogEndDepth: 0

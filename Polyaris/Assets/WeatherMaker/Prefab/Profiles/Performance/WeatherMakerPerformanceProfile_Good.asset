@@ -64,8 +64,8 @@ MonoBehaviour:
   FogFullScreenSunShaftSampleCount: 16
   FogNoiseSampleCount: 30
   FogShadowSampleCount: 0
-  WaterEnableCaustics: 1
-  WaterEnableRefraction: 1
+  WaterEnableCaustics: 0
+  WaterEnableRefraction: 0
   WaterEnableFoam: 1
   IgnoreReflectionProbes: 0
   ReflectionTextureSize: 512

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40055b00d854a2246a945353a71413d4, type: 3}
   m_Name: WeatherMakerFullScreenFogProfile_Default
   m_EditorClassIdentifier: 
-  FogMode: 2
-  FogDensity: 0
+  FogMode: 4
+  FogDensity: 0.005
   FogFactorMultiplier: 1
   FogStartDepth: 0
   FogEndDepth: 100000
