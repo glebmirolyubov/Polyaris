@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c9437dfa59d0164c89d59c14938f889, type: 3}
-  m_Name: FootstepOnSnow
+  m_Name: FootstepOnConcrete
   m_EditorClassIdentifier: 
   m_SpawnedObjects: []
   m_Decals: []
@@ -19,15 +19,15 @@ MonoBehaviour:
   m_AllowedDecalEdgeOverlap: 0.25
   m_AudioConfig: {fileID: 0}
   m_AudioClips:
-  - {fileID: 8300000, guid: a694c37175798f7498c88de12afac2e1, type: 3}
-  - {fileID: 8300000, guid: 490a3067b98e8554ab3627717885c4eb, type: 3}
-  - {fileID: 8300000, guid: 2985004face92894ab5a2417ac9a5b4c, type: 3}
-  - {fileID: 8300000, guid: e43bf5356571f4b4ba77b756e9807f7e, type: 3}
-  - {fileID: 8300000, guid: a94660de1139a4d4fb3774164e09e43e, type: 3}
-  m_MinAudioVolume: 0.1
-  m_MaxAudioVolume: 0.2
+  - {fileID: 8300000, guid: 03b9f3c6dfda041a3848fed9ead95b8b, type: 3}
+  - {fileID: 8300000, guid: b96913c1cddd5463f8ece564361ff4e7, type: 3}
+  - {fileID: 8300000, guid: 0949c01424dd8446abda2f813285e617, type: 3}
+  - {fileID: 8300000, guid: 7f76c03ce707e40aa8e2e7ffe709a147, type: 3}
+  - {fileID: 8300000, guid: 7f4e07acc40a341108a1db244a63c85a, type: 3}
+  m_MinAudioVolume: 0.5
+  m_MaxAudioVolume: 0.6
   m_MinAudioPitch: 0.8
-  m_MaxAudioPitch: 1.2
+  m_MaxAudioPitch: 1
   m_OneClipPerFrame: 0
   m_RandomClipSelection: 1
   m_StateName: 
