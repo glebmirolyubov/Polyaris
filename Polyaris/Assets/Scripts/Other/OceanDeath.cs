@@ -20,6 +20,8 @@ public class OceanDeath : MonoBehaviour
             var health = m_Character.GetComponent<Health>();
 
             health.ImmediateDeath();
+
+            GetComponent<AudioSource>().Play();
         }
     }
 }
