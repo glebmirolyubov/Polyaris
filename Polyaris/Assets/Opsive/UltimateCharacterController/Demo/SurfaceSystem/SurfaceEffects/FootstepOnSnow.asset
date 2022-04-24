@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: FootstepOnSnow
   m_EditorClassIdentifier: 
   m_SpawnedObjects: []
-  m_Decals: []
+  m_Decals:
+  - {fileID: 186514, guid: 7dca96f0d8a152742be0a232510e1486, type: 3}
   m_MinDecalScale: 1
   m_MaxDecalScale: 1
   m_AllowedDecalEdgeOverlap: 0.25
