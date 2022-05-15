@@ -6,7 +6,7 @@ using Opsive.UltimateCharacterController.Traits;
 public class ColdManager : MonoBehaviour
 {
     [Tooltip("The character that has the health component.")]
-    [SerializeField] protected GameObject m_Character;
+    [SerializeField] private GameObject m_Character;
 
     public float timeRemaining = 5;
 
