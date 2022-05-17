@@ -19,6 +19,8 @@ public class OceanDeath : MonoBehaviour
         {
             var health = m_Character.GetComponent<Health>();
 
+            Debug.Log("Detected Player!");
+
             health.ImmediateDeath();
 
             GetComponent<AudioSource>().Play();
