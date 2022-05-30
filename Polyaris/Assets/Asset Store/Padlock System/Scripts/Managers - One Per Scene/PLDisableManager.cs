@@ -10,7 +10,8 @@ namespace PadlockSystem
 
         [SerializeField] private FirstPersonController player = null;
         [SerializeField] private PadlockRaycast mainCameraRaycast = null;
-        [SerializeField] private Image crosshair = null; 
+        [SerializeField] private Image crosshair = null;
+        [SerializeField] private Opsive.Shared.Input.UnityInput playerInput;
 
         void Awake()
         {
@@ -22,10 +23,11 @@ namespace PadlockSystem
         {
             if (disable)
             {
-                player.enabled = false;
+                //player.enabled = false;
+                playerInput.enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                mainCameraRaycast.enabled = false;
+                //mainCameraRaycast.enabled = false;
                 crosshair.enabled = false;
             }
 
@@ -33,9 +35,10 @@ namespace PadlockSystem
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                player.enabled = true;
-                mainCameraRaycast.enabled = true;
+                //player.enabled = true;
+                //mainCameraRaycast.enabled = true;
                 crosshair.enabled = true;
+                playerInput.enabled = true;
             }
         }
     }

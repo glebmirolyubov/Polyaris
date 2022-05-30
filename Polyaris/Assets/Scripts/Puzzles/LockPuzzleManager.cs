@@ -18,5 +18,4 @@ public class LockPuzzleManager : MonoBehaviour
         openDoorInteraction.SetActive(true);
         puzzleSolved = true;
     }
-
 }
