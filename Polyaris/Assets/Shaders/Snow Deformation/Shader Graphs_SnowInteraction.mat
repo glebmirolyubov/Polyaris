@@ -55,7 +55,7 @@ Material:
     - _QueueOffset: 0
     - _SnowBrightness: 1
     - _SnowPower: 0.5
-    - _SnowScale: 1500
+    - _SnowScale: 1000
     - _VertexOffset: 0.007
     m_Colors:
     - _SnowColor: {r: 1, g: 1, b: 1, a: 1}
