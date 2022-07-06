@@ -20,9 +20,19 @@ ModelImporter:
     removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'ji_rig:HipPart2_L'
+      : rotation error = 1.700358 deg\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'ji_rig:Spine1Part1_M' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'ji_rig:Spine1Part2_M'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'ji_rig:Neck_M'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'ji_rig:NeckPart2_M'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'ji_rig:ShoulderPart2_R'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'ji_rig:ShoulderPart2_L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -34,7 +44,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 326
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -82,8 +121,1698 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: ji_rig:Root_M
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:HipPart1_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:HipPart1_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Knee_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Knee_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Ankle_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Ankle_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RootPart1_M
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Spine1_M
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:NeckPart1_M
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Head_M
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Shoulder_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Shoulder_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ShoulderPart1_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ShoulderPart1_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Elbow_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Elbow_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ElbowPart2_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ElbowPart2_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Toes_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Toes_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IrisJoint_L
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IrisJoint_R
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:JawJoint_M
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ThumbFinger1_L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ThumbFinger2_L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ThumbFinger3_L
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IndexFinger1_L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IndexFinger2_L
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IndexFinger3_L
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:MiddleFinger1_L
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:MiddleFinger2_L
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:MiddleFinger3_L
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RingFinger1_L
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RingFinger2_L
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RingFinger3_L
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:PinkyFinger1_L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:PinkyFinger2_L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:PinkyFinger3_L
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ThumbFinger1_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ThumbFinger2_R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:ThumbFinger3_R
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IndexFinger1_R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IndexFinger2_R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:IndexFinger3_R
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:MiddleFinger1_R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:MiddleFinger2_R
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:MiddleFinger3_R
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RingFinger1_R
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RingFinger2_R
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:RingFinger3_R
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:PinkyFinger1_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:PinkyFinger2_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:PinkyFinger3_R
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ji_rig:Chest_M
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ji_sitting_iddle(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:MotionSystem
+      parentName: ji_sitting_iddle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:MainSystem
+      parentName: ji_rig:MotionSystem
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Main
+      parentName: ji_rig:MainSystem
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:DeformationSystem
+      parentName: ji_sitting_iddle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Root_M
+      parentName: ji_rig:DeformationSystem
+      position: {x: -2.0260108e-17, y: 0.979789, z: -0.013263861}
+      rotation: {x: 0.4858853, y: -0.513727, z: -0.4858853, w: 0.51372707}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: ji_rig:Hip_L
+      parentName: ji_rig:Root_M
+      position: {x: 0.047620993, y: -0.0075557255, z: 0.09825479}
+      rotation: {x: 0.9993818, y: 0.031103017, z: 0.015596301, w: -0.00504379}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000004}
+    - name: ji_rig:HipPart1_L
+      parentName: ji_rig:Hip_L
+      position: {x: 0.12847884, y: -2.1816303e-10, z: -1.7472405e-11}
+      rotation: {x: -0.000000027939679, y: -0.00000003103924, z: -0.0000000614673, w: 1}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000004}
+    - name: ji_rig:HipPart2_L
+      parentName: ji_rig:HipPart1_L
+      position: {x: 0.12847884, y: -2.1858541e-10, z: -1.0991225e-11}
+      rotation: {x: -0, y: -0, z: -8.672263e-16, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ji_rig:Knee_L
+      parentName: ji_rig:HipPart2_L
+      position: {x: 0.12847884, y: -2.1881531e-10, z: -4.5004e-12}
+      rotation: {x: -0.000000024736316, y: 0.000000019021316, z: -0.09598273, w: -0.995383}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: ji_rig:Ankle_L
+      parentName: ji_rig:Knee_L
+      position: {x: 0.45881483, y: 1.0302869e-15, z: -8.171241e-16}
+      rotation: {x: 0.015443325, y: -0.015681148, z: -0.036817685, w: 0.9990797}
+      scale: {x: 0.9999993, y: 0.9999993, z: 1.0000001}
+    - name: ji_rig:Toes_L
+      parentName: ji_rig:Ankle_L
+      position: {x: 0.06847265, y: -0.13812052, z: 1.1478462e-12}
+      rotation: {x: 0.016563313, y: 0.015070289, z: 0.67281234, w: -0.7394741}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1}
+    - name: ji_rig:ToesEnd_L
+      parentName: ji_rig:Toes_L
+      position: {x: 0.09201846, y: 1.7763568e-17, z: 5.9932154e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Hip_R
+      parentName: ji_rig:Root_M
+      position: {x: 0.047620993, y: -0.0075557255, z: -0.09825479}
+      rotation: {x: -0.031103075, y: 0.9993818, z: -0.0050436854, w: -0.015596211}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: ji_rig:HipPart1_R
+      parentName: ji_rig:Hip_R
+      position: {x: -0.12847884, y: 1.9441803e-12, z: 4.4597214e-13}
+      rotation: {x: 0.000000087777146, y: 9.3132246e-10, z: 0.00000007823109, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
+    - name: ji_rig:HipPart2_R
+      parentName: ji_rig:HipPart1_R
+      position: {x: -0.12847884, y: 1.7472956e-12, z: -9.620394e-13}
+      rotation: {x: -0.00000005753827, y: -0.00000006053596, z: -0.000000014901149, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: ji_rig:Knee_R
+      parentName: ji_rig:HipPart2_R
+      position: {x: -0.12847884, y: 6.629541e-13, z: -1.88132e-12}
+      rotation: {x: 0.0000000041144053, y: 0.00000006688847, z: 0.09598275, w: 0.995383}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: ji_rig:Ankle_R
+      parentName: ji_rig:Knee_R
+      position: {x: -0.45881483, y: -5.684342e-16, z: 7.105427e-16}
+      rotation: {x: 0.015443326, y: -0.015681254, z: -0.036817703, w: 0.99907964}
+      scale: {x: 1.0000004, y: 0.9999999, z: 1}
+    - name: ji_rig:Toes_R
+      parentName: ji_rig:Ankle_R
+      position: {x: -0.06847265, y: 0.13812052, z: 1.873666e-10}
+      rotation: {x: -0.016564084, y: -0.0150708845, z: -0.67281246, w: 0.7394742}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000004}
+    - name: ji_rig:ToesEnd_R
+      parentName: ji_rig:Toes_R
+      position: {x: -0.09201846, y: -1.4392931e-14, z: 0.00000016716096}
+      rotation: {x: 0.00000011253083, y: 0.0000009083013, z: -1.0221189e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:RootPart1_M
+      parentName: ji_rig:Root_M
+      position: {x: -0.071769975, y: -1.9984014e-17, z: -5.9533353e-17}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: ji_rig:RootPart2_M
+      parentName: ji_rig:RootPart1_M
+      position: {x: -0.071769975, y: -6.4392934e-17, z: -4.3883225e-17}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: ji_rig:Spine1_M
+      parentName: ji_rig:RootPart2_M
+      position: {x: -0.071769975, y: -3.7747583e-17, z: -1.3449965e-16}
+      rotation: {x: -0.000000029802322, y: -0, z: -0.004997596, w: 0.99998754}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: ji_rig:Spine1Part1_M
+      parentName: ji_rig:Spine1_M
+      position: {x: -0.047867626, y: 4.352074e-16, z: -1.0744403e-17}
+      rotation: {x: 0.00000002980195, y: 1.489382e-10, z: 0.000000059604645, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:Spine1Part2_M
+      parentName: ji_rig:Spine1Part1_M
+      position: {x: -0.047867626, y: 4.6185276e-16, z: -1.00632634e-17}
+      rotation: {x: -0, y: -0, z: -4.4386487e-18, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: ji_rig:Chest_M
+      parentName: ji_rig:Spine1Part2_M
+      position: {x: -0.047867626, y: 3.907985e-16, z: -5.5481363e-17}
+      rotation: {x: -0.000000029802322, y: 0.000000029802322, z: 0.04203981, w: -0.99911594}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: ji_rig:Neck_M
+      parentName: ji_rig:Chest_M
+      position: {x: -0.16641085, y: 1.4210854e-16, z: 4.1296408e-16}
+      rotation: {x: -0.00000002602842, y: -0.000000028050424, z: 0.092083596, w: -0.99575126}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: ji_rig:NeckPart1_M
+      parentName: ji_rig:Neck_M
+      position: {x: -0.026459642, y: 1.4210854e-16, z: 4.440892e-18}
+      rotation: {x: -0.00000002489551, y: -0.000000034008387, z: 0.00000004470348, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: ji_rig:NeckPart2_M
+      parentName: ji_rig:NeckPart1_M
+      position: {x: -0.026459642, y: 2.842171e-16, z: 0}
+      rotation: {x: 5.21915e-10, y: -6.527046e-10, z: -0.000000007450588, w: -1}
+      scale: {x: 0.99999636, y: 0.99999547, z: 0.9999958}
+    - name: ji_rig:Head_M
+      parentName: ji_rig:NeckPart2_M
+      position: {x: -0.026459642, y: 1.4210854e-16, z: -5.3290704e-17}
+      rotation: {x: -0, y: -0, z: 0.11118823, w: 0.99379945}
+      scale: {x: 1.0000012, y: 1.0000054, z: 1.0000037}
+    - name: ji_rig:HeadEnd_M
+      parentName: ji_rig:Head_M
+      position: {x: -0.17154266, y: -1.5099033e-16, z: 8.4544926e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:FaceJoint_M
+      parentName: ji_rig:Head_M
+      position: {x: 1.6269297e-10, y: 0.019410018, z: 1.4945013e-17}
+      rotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:upperLidMain0_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.019578498, y: 0.06196515, z: 0.06192329}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain1_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.020483155, y: 0.062681705, z: 0.062846355}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain2_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.022332221, y: 0.06349881, z: 0.06393147}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain3_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.023994416, y: 0.064362, z: 0.06493639}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain4_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.029632399, y: 0.065678984, z: 0.067153096}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain5_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.034080293, y: 0.065772064, z: 0.06778557}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain6_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.038168143, y: 0.06539243, z: 0.067331515}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain7_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.04129047, y: 0.064649016, z: 0.06600832}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain8_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.042783786, y: 0.06408703, z: 0.0631883}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain9_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.044392433, y: 0.0630061, z: 0.060433857}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain10_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.045631196, y: 0.06213315, z: 0.057816338}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain11_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.046174638, y: 0.061756715, z: 0.05699449}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain1_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.023245687, y: 0.062074404, z: 0.064632945}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain2_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.02602025, y: 0.061909914, z: 0.06534907}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain3_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.030558705, y: 0.06120114, z: 0.06605685}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain4_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.03604069, y: 0.06078717, z: 0.06556894}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain5_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.04088937, y: 0.060589723, z: 0.063891344}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
+    - name: ji_rig:lowerLidMain6_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.04294316, y: 0.0609422, z: 0.062473223}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
+    - name: ji_rig:lowerLidMain7_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.04578958, y: 0.06142224, z: 0.05751471}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain0_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.019578498, y: 0.06196515, z: 0.06192329}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain1_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.020483155, y: 0.062681705, z: 0.062846355}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
+    - name: ji_rig:upperLidMain2_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.022332221, y: 0.06349881, z: 0.06393147}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
+    - name: ji_rig:upperLidMain3_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.023994416, y: 0.064362, z: 0.06493639}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain4_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.029632399, y: 0.065678984, z: 0.067153096}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain5_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.034080293, y: 0.065772064, z: 0.06778557}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain6_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.038168143, y: 0.06539243, z: 0.067331515}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain7_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.04129047, y: 0.064649016, z: 0.06600832}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain8_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.042783786, y: 0.06408703, z: 0.0631883}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain9_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.044392433, y: 0.0630061, z: 0.060433857}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain10_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.045631196, y: 0.06213315, z: 0.057816338}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidMain11_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.046174638, y: 0.061756715, z: 0.05699449}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain1_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.023245687, y: 0.062074404, z: 0.064632945}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
+    - name: ji_rig:lowerLidMain2_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.02602025, y: 0.061909914, z: 0.06534907}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain3_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.030558705, y: 0.06120114, z: 0.06605685}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain4_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.03604069, y: 0.06078717, z: 0.06556894}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain5_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.04088937, y: 0.060589723, z: 0.063891344}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain6_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.04294316, y: 0.0609422, z: 0.062473223}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:lowerLidMain7_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.04578958, y: 0.06142224, z: 0.05751471}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLidBaseJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.03171707, y: 0.07127225, z: 0.07365657}
+      rotation: {x: -0.9958058, y: -0.00000005960463, z: 0.09149266, w: -0.000000014901158}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: ji_rig:upperLidBaseJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.03171707, y: 0.07127225, z: 0.07365657}
+      rotation: {x: 0.000000029802315, y: 0.091492645, z: 0.00000007450579, w: -0.9958058}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:EyeBrowInnerJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.009384455, y: 0.07000775, z: 0.07752137}
+      rotation: {x: -0.99552673, y: 0.000000119209275, z: 0.09448092, w: -0.000000119209275}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:EyeBrowMid1Joint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.017075973, y: 0.07380231, z: 0.080348566}
+      rotation: {x: -0.9876804, y: 0.000000029802322, z: 0.15648533, w: -0.000000029802322}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: ji_rig:EyeBrowMid2Joint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.03228733, y: 0.07837079, z: 0.07692116}
+      rotation: {x: -0.9603583, y: -0, z: 0.2787687, w: 0.00000010430811}
+      scale: {x: 0.9999999, y: 1, z: 0.99999976}
+    - name: ji_rig:EyeBrowMid3Joint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.046448387, y: 0.07806271, z: 0.070604965}
+      rotation: {x: -0.9258994, y: -0.00000005960463, z: 0.37777013, w: 0.00000005960463}
+      scale: {x: 0.9999999, y: 1.0000004, z: 1.0000002}
+    - name: ji_rig:EyeBrowOuterJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.052855473, y: 0.07823376, z: 0.06610244}
+      rotation: {x: -0.9066377, y: 0.000000059604623, z: 0.42191005, w: -0.000000059604623}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:EyeBrowCenterJoint_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 4.796163e-16, y: 0.07129742, z: 0.08262499}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:EyeBrowInnerJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.009384455, y: 0.07000775, z: 0.07752137}
+      rotation: {x: 0.00000005960463, y: 0.09448091, z: -0, w: -0.9955267}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:EyeBrowMid1Joint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.017075973, y: 0.07380231, z: 0.080348566}
+      rotation: {x: 0.000000059604645, y: 0.15648527, z: -0.000000044703484, w: -0.9876804}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
+    - name: ji_rig:EyeBrowMid2Joint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.03228733, y: 0.07837079, z: 0.07692116}
+      rotation: {x: -0.00000011920925, y: 0.27876863, z: -0, w: -0.96035826}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:EyeBrowMid3Joint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.046448387, y: 0.07806271, z: 0.070604965}
+      rotation: {x: -0.00000005960463, y: 0.37777004, z: 0.00000007450579, w: -0.92589945}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ji_rig:EyeBrowOuterJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.052855473, y: 0.07823376, z: 0.06610244}
+      rotation: {x: 0.000000089406946, y: 0.42191014, z: -0.000000014901158, w: -0.9066377}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ji_rig:LipJoints_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 4.5832476e-16, y: -0.011308393, z: 0.08660848}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:upperLipJoint0_M
+      parentName: ji_rig:LipJoints_M
+      position: {x: 3.305056e-11, y: 0.003848614, z: -0.0019590568}
+      rotation: {x: 0.000000031654572, y: -0.00000006938714, z: -0.000000029380478, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ji_rig:upperLipJoint1_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.004476591, y: 0.0037891853, z: -0.0019540116}
+      rotation: {x: 0.00045693014, y: 0.14786783, z: -0.013527196, w: 0.98891455}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: ji_rig:upperLipJoint1_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.004476591, y: 0.0037891858, z: -0.0019540116}
+      rotation: {x: 0.00045690968, y: -0.14786796, z: 0.013527137, w: 0.9889145}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ji_rig:upperLipJoint2_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.008132124, y: 0.0036328663, z: -0.003561899}
+      rotation: {x: 0.0005889889, y: 0.23032406, z: -0.02718191, w: 0.9727341}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: ji_rig:upperLipJoint2_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.008132124, y: 0.0036328672, z: -0.003561899}
+      rotation: {x: 0.0005889726, y: -0.2303242, z: 0.027181843, w: 0.9727341}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:upperLipJoint3_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.011534539, y: 0.0033559278, z: -0.0059349965}
+      rotation: {x: -0.00068298314, y: 0.28479242, z: -0.044567857, w: 0.9575524}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:upperLipJoint3_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.011534539, y: 0.003355929, z: -0.0059349965}
+      rotation: {x: -0.0006829815, y: -0.28479254, z: 0.04456782, w: 0.9575524}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ji_rig:upperLipJoint4_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.014853406, y: 0.002894649, z: -0.008616091}
+      rotation: {x: -0.0051761614, y: 0.31798652, z: -0.071177684, w: 0.9454055}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ji_rig:upperLipJoint4_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.014853406, y: 0.0028946507, z: -0.008616091}
+      rotation: {x: -0.0051762005, y: -0.31798667, z: 0.07117766, w: 0.9454054}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: ji_rig:upperLipJoint5_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.018778851, y: 0.0019562752, z: -0.011227999}
+      rotation: {x: -0.021974014, y: 0.3247627, z: -0.1340116, w: 0.93599534}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ji_rig:upperLipJoint5_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.018778851, y: 0.0019562766, z: -0.011227999}
+      rotation: {x: -0.021974016, y: -0.3247627, z: 0.1340116, w: 0.93599534}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+    - name: ji_rig:upperLipJoint6_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.021864824, y: 0.00055585895, z: -0.013227221}
+      rotation: {x: -0.053235535, y: 0.32319874, z: -0.22573206, w: 0.91747135}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: ji_rig:upperLipJoint6_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.021864826, y: 0.00055586, z: -0.013227221}
+      rotation: {x: -0.053235564, y: -0.32319874, z: 0.22573206, w: 0.91747135}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: ji_rig:upperLipJoint7_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.02361297, y: -0.0007912552, z: -0.014643245}
+      rotation: {x: -0.08151511, y: 0.32158118, z: -0.28883752, w: 0.89806116}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:upperLipJoint7_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.02361297, y: -0.00079125457, z: -0.014643245}
+      rotation: {x: -0.08151507, y: -0.32158116, z: 0.28883755, w: 0.8980611}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: ji_rig:upperLipJoint8_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.024758862, y: -0.0018790131, z: -0.015517347}
+      rotation: {x: -0.10041787, y: 0.321861, z: -0.3171942, w: 0.88640267}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ji_rig:upperLipJoint8_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.024758866, y: -0.0018790138, z: -0.015517347}
+      rotation: {x: -0.100417934, y: -0.3218609, z: 0.3171943, w: 0.88640267}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:LipJoint_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.025434047, y: -0.0028769667, z: -0.016571512}
+      rotation: {x: -0.115988, y: 0.32300448, z: -0.3319232, w: 0.8786592}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:LipJoint_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.025434047, y: -0.0028769667, z: -0.016571512}
+      rotation: {x: -0.115988016, y: -0.32300445, z: 0.33192322, w: 0.8786591}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: ji_rig:lowerLipJoint0_M
+      parentName: ji_rig:LipJoints_M
+      position: {x: 8.8817837e-17, y: -0.0044492516, z: -0.002265949}
+      rotation: {x: 0.000000021648052, y: -0.000000048783175, z: -4.2050727e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:lowerLipJoint1_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.005170077, y: -0.0043663527, z: -0.0029277885}
+      rotation: {x: -0.00042519273, y: 0.15482666, z: 0.014775534, w: 0.9878311}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: ji_rig:lowerLipJoint1_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.005170077, y: -0.0043663527, z: -0.0029277885}
+      rotation: {x: -0.0004251409, y: -0.1548267, z: -0.014775525, w: 0.9878311}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: ji_rig:lowerLipJoint2_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.009981606, y: -0.004164391, z: -0.00507299}
+      rotation: {x: -0.000025565481, y: 0.24527705, z: 0.023778178, w: 0.9691614}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ji_rig:lowerLipJoint2_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.009981606, y: -0.004164391, z: -0.00507299}
+      rotation: {x: -0.000025556199, y: -0.24527717, z: -0.02377819, w: 0.96916133}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: ji_rig:lowerLipJoint3_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.015311688, y: -0.0038233562, z: -0.008814576}
+      rotation: {x: 0.002377615, y: 0.30242735, z: 0.03017334, w: 0.9526918}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ji_rig:lowerLipJoint3_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.015311688, y: -0.0038233562, z: -0.008814576}
+      rotation: {x: 0.002377601, y: -0.30242738, z: -0.030173372, w: 0.9526918}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: ji_rig:lowerLipJoint4_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.01961548, y: -0.0034867737, z: -0.011829016}
+      rotation: {x: 0.0060014254, y: 0.32216465, z: 0.034787994, w: 0.94602525}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: ji_rig:lowerLipJoint4_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.01961548, y: -0.0034867737, z: -0.011829016}
+      rotation: {x: 0.006001385, y: -0.32216483, z: -0.034787986, w: 0.9460252}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: ji_rig:lowerLipJoint5_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.022404918, y: -0.0032354945, z: -0.01363969}
+      rotation: {x: 0.009095812, y: 0.3386936, z: 0.03916229, w: 0.94003737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:lowerLipJoint5_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.022404918, y: -0.0032354945, z: -0.01363969}
+      rotation: {x: 0.009095792, y: -0.3386937, z: -0.039162282, w: 0.9400373}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:lowerLipJoint6_R
+      parentName: ji_rig:LipJoints_M
+      position: {x: 0.023638606, y: -0.0030947023, z: -0.014838717}
+      rotation: {x: 0.01097317, y: 0.3457253, z: 0.041188687, w: 0.93736714}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: ji_rig:lowerLipJoint6_L
+      parentName: ji_rig:LipJoints_M
+      position: {x: -0.023638606, y: -0.0030947023, z: -0.014838717}
+      rotation: {x: 0.010973193, y: -0.34572536, z: -0.041188713, w: 0.93736714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:SmileBulgeJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.037648216, y: -0.0032104775, z: 0.06355469}
+      rotation: {x: -0.9297466, y: 0.000000059604638, z: 0.36820015, w: 0}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: ji_rig:FrownBulgeJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.034562312, y: -0.022344999, z: 0.05853166}
+      rotation: {x: -0.9260485, y: 0.000000059604638, z: 0.37740463, w: -0.0000000745058}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ji_rig:SmileBulgeJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.037648216, y: -0.0032104775, z: 0.06355469}
+      rotation: {x: -0, y: 0.36820033, z: 0.000000014901158, w: -0.9297465}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:FrownBulgeJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.034562312, y: -0.022344999, z: 0.05853166}
+      rotation: {x: 0.000000119209275, y: 0.3774047, z: -0.000000014901159, w: -0.92604846}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: ji_rig:CheekRaiserJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.029587844, y: 0.048639953, z: 0.074932024}
+      rotation: {x: -0.9958058, y: -0.00000005960463, z: 0.09149266, w: -0.000000014901158}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: ji_rig:CheekRaiserJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.029587844, y: 0.048639953, z: 0.074932024}
+      rotation: {x: 0.000000029802315, y: 0.091492645, z: 0.00000007450579, w: -0.9958058}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:CheekJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.053010944, y: 0.007365236, z: 0.037688017}
+      rotation: {x: -0.83341295, y: 0.00000005960463, z: 0.55265075, w: -0.000000014901158}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:CheekJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.053010944, y: 0.007365236, z: 0.037688017}
+      rotation: {x: 0.000000029802315, y: 0.55265075, z: -0.000000044703473, w: -0.83341295}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:NoseJoint_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 4.796163e-16, y: 0.013453037, z: 0.10118743}
+      rotation: {x: -0, y: -0, z: -0, w: -1}
+      scale: {x: 1, y: 1, z: 0.99999976}
+    - name: ji_rig:NoseCornerJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.014052631, y: 0.012788973, z: 0.07608148}
+      rotation: {x: -0.9899147, y: -0, z: 0.14166471, w: -0.0000000745058}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: ji_rig:NoseCornerJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.014052631, y: 0.012788973, z: 0.07608148}
+      rotation: {x: 0.00000008940696, y: 0.1416647, z: 0.000000029802319, w: -0.9899148}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: ji_rig:JawJoint_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 5.32907e-16, y: 0.026952485, z: 0.0042206603}
+      rotation: {x: -0.000000074505806, y: 0.000000029802322, z: -0.000000074505806, w: -1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
+    - name: ji_rig:Tongue0Joint_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 5.1514347e-16, y: -0.011753874, z: 0.013256644}
+      rotation: {x: -0.000000023697828, y: -0.70710677, z: -0.000000029802315, w: -0.70710677}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000005}
+    - name: ji_rig:Tongue1Joint_M
+      parentName: ji_rig:Tongue0Joint_M
+      position: {x: -0.016608043, y: 1.3920712e-10, z: 1.3920705e-10}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: ji_rig:Tongue2Joint_M
+      parentName: ji_rig:Tongue1Joint_M
+      position: {x: -0.016608043, y: 1.3920726e-10, z: 1.3920702e-10}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: ji_rig:Tongue3Joint_M
+      parentName: ji_rig:Tongue2Joint_M
+      position: {x: -0.016608043, y: 1.392074e-10, z: 1.3920705e-10}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: ji_rig:EyeJoint_L
+      parentName: ji_rig:FaceJoint_M
+      position: {x: -0.03213188, y: 0.06341001, z: 0.051135004}
+      rotation: {x: -0, y: -0, z: -0.000000059604645, w: -1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+    - name: ji_rig:IrisJoint_L
+      parentName: ji_rig:EyeJoint_L
+      position: {x: 0.00011481523, y: -0.00000007618673, z: 0.012790793}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:PupilJoint_L
+      parentName: ji_rig:IrisJoint_L
+      position: {x: -0.000000005960464, y: 0.000000076296075, z: 0.00025431157}
+      rotation: {x: -0, y: -0, z: 1.4840475e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:EyeJoint_R
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 0.03253894, y: 0.06371161, z: 0.051207412}
+      rotation: {x: -0, y: -0, z: -0.000000059604645, w: -1}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: ji_rig:IrisJoint_R
+      parentName: ji_rig:EyeJoint_R
+      position: {x: -0.00036206108, y: -0.0003016838, z: 0.012866958}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:PupilJoint_R
+      parentName: ji_rig:IrisJoint_R
+      position: {x: 0.00048286794, y: 0.00000007629519, z: 0.00014824628}
+      rotation: {x: -0, y: -0, z: 1.4840475e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:lowerTeethJoint_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 4.973799e-16, y: -0.018925505, z: 0.03600038}
+      rotation: {x: -0.000000074505806, y: 0.000000029802322, z: -0.000000074505806, w: -1}
+      scale: {x: 1.0000001, y: 1.000001, z: 0.9999989}
+    - name: ji_rig:upperTeethJoint_M
+      parentName: ji_rig:FaceJoint_M
+      position: {x: 5.1514347e-16, y: -0.000106687454, z: 0.036106974}
+      rotation: {x: -0.000000074505806, y: 0.000000029802322, z: -0.000000074505806, w: -1}
+      scale: {x: 1, y: 1.0000008, z: 1}
+    - name: ji_rig:Scapula_L
+      parentName: ji_rig:Chest_M
+      position: {x: -0.08835984, y: 0.001060862, z: 0.08045014}
+      rotation: {x: -0.70580435, y: 0.04391738, z: -0.7034644, w: 0.07105913}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: ji_rig:Shoulder_L
+      parentName: ji_rig:Scapula_L
+      position: {x: 0.11381149, y: 6.9775294e-14, z: -5.6843415e-15}
+      rotation: {x: 0.051705375, y: 0.0014045769, z: 0.07522747, w: -0.99582404}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
+    - name: ji_rig:ShoulderPart1_L
+      parentName: ji_rig:Shoulder_L
+      position: {x: 0.08958141, y: -4.2632563e-16, z: -6.3948843e-16}
+      rotation: {x: -0.0000000074505797, y: 0.000000021187587, z: -0.00000006946356, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: ji_rig:ShoulderPart2_L
+      parentName: ji_rig:ShoulderPart1_L
+      position: {x: 0.08958141, y: -4.6185276e-16, z: -6.750156e-16}
+      rotation: {x: 0.0000000074505797, y: -0.000000019092111, z: 0.00000005126639, w: 1}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000005}
+    - name: ji_rig:Elbow_L
+      parentName: ji_rig:ShoulderPart2_L
+      position: {x: 0.08958141, y: -2.842171e-16, z: -7.81597e-16}
+      rotation: {x: -0.00000003988407, y: -0.00000002142042, z: -0.03949837, w: 0.99921966}
+      scale: {x: 0.9999994, y: 0.9999994, z: 0.9999994}
+    - name: ji_rig:ElbowPart1_L
+      parentName: ji_rig:Elbow_L
+      position: {x: 0.07844744, y: -2.1316282e-16, z: -7.105427e-16}
+      rotation: {x: -7.2196116e-10, y: 0.000000024204759, z: 0.000000018626451, w: 1}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.0000008}
+    - name: ji_rig:ElbowPart2_L
+      parentName: ji_rig:ElbowPart1_L
+      position: {x: 0.07844744, y: -5.506706e-16, z: -4.2632563e-16}
+      rotation: {x: -3.1485115e-10, y: 0.0000000018516566, z: -0.000000040978193, w: 1}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000004}
+    - name: ji_rig:Wrist_L
+      parentName: ji_rig:ElbowPart2_L
+      position: {x: 0.07844744, y: -6.9277914e-16, z: 7.105427e-17}
+      rotation: {x: -0.051084563, y: -0.02173002, z: -0.027212726, w: -0.99808705}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000004}
+    - name: ji_rig:IndexFinger1_L
+      parentName: ji_rig:Wrist_L
+      position: {x: 0.10893105, y: -0.024117103, z: 0.0015203778}
+      rotation: {x: 0.0019312586, y: 0.048813302, z: 0.03753015, w: -0.99810076}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.9999999}
+    - name: ji_rig:IndexFinger2_L
+      parentName: ji_rig:IndexFinger1_L
+      position: {x: 0.029651638, y: -1.4210854e-16, z: 6.217249e-16}
+      rotation: {x: -0.0010001288, y: -0.039696585, z: 0.002385771, w: 0.9992085}
+      scale: {x: 0.99999976, y: 0.99999976, z: 1}
+    - name: ji_rig:IndexFinger3_L
+      parentName: ji_rig:IndexFinger2_L
+      position: {x: 0.021868173, y: 7.105427e-17, z: -8.171241e-16}
+      rotation: {x: -0.016855689, y: -0.03634073, z: 0.00063792564, w: 0.99919707}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1}
+    - name: ji_rig:IndexFinger4_L
+      parentName: ji_rig:IndexFinger3_L
+      position: {x: 0.024567012, y: -3.5527136e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:MiddleFinger1_L
+      parentName: ji_rig:Wrist_L
+      position: {x: 0.11010317, y: 3.5527136e-17, z: 2.842171e-16}
+      rotation: {x: 0.0021528746, y: 0.09234753, z: 0.011502247, w: -0.99565804}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: ji_rig:MiddleFinger2_L
+      parentName: ji_rig:MiddleFinger1_L
+      position: {x: 0.034438375, y: 0, z: 7.105427e-17}
+      rotation: {x: -0.00021413059, y: -0.037314627, z: 0.00036881818, w: 0.9993035}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000006}
+    - name: ji_rig:MiddleFinger3_L
+      parentName: ji_rig:MiddleFinger2_L
+      position: {x: 0.02400288, y: -3.5527136e-17, z: 2.4868996e-16}
+      rotation: {x: 0.00047238995, y: 0.0010740536, z: 0.0005141431, w: 0.9999992}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: ji_rig:MiddleFinger4_L
+      parentName: ji_rig:MiddleFinger3_L
+      position: {x: 0.027723068, y: 8.881784e-18, z: -8.5265126e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Cup_L
+      parentName: ji_rig:Wrist_L
+      position: {x: 0.021330062, y: 0.015057259, z: -0.00025943134}
+      rotation: {x: 0.035451766, y: 0.020135432, z: 0.02367746, w: -0.9988879}
+      scale: {x: 0.9999999, y: 0.99999976, z: 1}
+    - name: ji_rig:PinkyFinger1_L
+      parentName: ji_rig:Cup_L
+      position: {x: 0.07510563, y: 0.029770283, z: 0.015154619}
+      rotation: {x: -0.08009503, y: 0.06135902, z: -0.049534827, w: -0.9936631}
+      scale: {x: 0.9999999, y: 1, z: 1.0000002}
+    - name: ji_rig:PinkyFinger2_L
+      parentName: ji_rig:PinkyFinger1_L
+      position: {x: 0.022675114, y: -3.5527136e-17, z: -5.595524e-16}
+      rotation: {x: 0.0020091601, y: -0.03823601, z: 0.0005003175, w: 0.9992667}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: ji_rig:PinkyFinger3_L
+      parentName: ji_rig:PinkyFinger2_L
+      position: {x: 0.014082813, y: -7.105427e-17, z: 3.1086244e-16}
+      rotation: {x: 0.018594446, y: -0.02656983, z: -0.0055274647, w: 0.99945873}
+      scale: {x: 0.99999964, y: 0.99999976, z: 0.9999999}
+    - name: ji_rig:PinkyFinger4_L
+      parentName: ji_rig:PinkyFinger3_L
+      position: {x: 0.02047265, y: -1.7763568e-17, z: 2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:RingFinger1_L
+      parentName: ji_rig:Cup_L
+      position: {x: 0.08134515, y: 0.010694743, z: 0.0042441767}
+      rotation: {x: -0.088559635, y: 0.042299904, z: -0.043299817, w: -0.9942299}
+      scale: {x: 0.99999964, y: 0.9999999, z: 0.9999999}
+    - name: ji_rig:RingFinger2_L
+      parentName: ji_rig:RingFinger1_L
+      position: {x: 0.02976126, y: -7.105427e-17, z: -2.9753975e-16}
+      rotation: {x: -0.0021333694, y: -0.03847622, z: -0.0012265695, w: 0.99925655}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: ji_rig:RingFinger3_L
+      parentName: ji_rig:RingFinger2_L
+      position: {x: 0.022179894, y: -7.105427e-17, z: 1.0857981e-15}
+      rotation: {x: 0.005280145, y: -0.032925356, z: -0.0034269092, w: 0.99943805}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ji_rig:RingFinger4_L
+      parentName: ji_rig:RingFinger3_L
+      position: {x: 0.029863436, y: 5.3290704e-17, z: -1.1368684e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:ThumbFinger1_L
+      parentName: ji_rig:Wrist_L
+      position: {x: 0.036621295, y: -0.03208573, z: 0.01971327}
+      rotation: {x: 0.5220588, y: -0.15050022, z: 0.2929192, w: -0.78676724}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.9999999}
+    - name: ji_rig:ThumbFinger2_L
+      parentName: ji_rig:ThumbFinger1_L
+      position: {x: 0.04494248, y: -7.105427e-16, z: -2.664535e-16}
+      rotation: {x: -0.0030445151, y: -0.040400002, z: -0.0010914428, w: 0.9991784}
+      scale: {x: 0.99999976, y: 1, z: 0.9999999}
+    - name: ji_rig:ThumbFinger3_L
+      parentName: ji_rig:ThumbFinger2_L
+      position: {x: 0.024421215, y: 1.1723955e-15, z: 0}
+      rotation: {x: -0.0017529167, y: -0.042852018, z: -0.0047337925, w: 0.9990687}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1}
+    - name: ji_rig:ThumbFinger4_L
+      parentName: ji_rig:ThumbFinger3_L
+      position: {x: 0.031374093, y: -2.842171e-16, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Scapula_R
+      parentName: ji_rig:Chest_M
+      position: {x: -0.08835984, y: 0.001060862, z: -0.08045014}
+      rotation: {x: -0.043917425, y: -0.7058044, z: 0.07105917, w: 0.7034643}
+      scale: {x: 1.0000008, y: 1.0000005, z: 1.0000001}
+    - name: ji_rig:Shoulder_R
+      parentName: ji_rig:Scapula_R
+      position: {x: -0.11381149, y: -5.1869617e-15, z: 6.039613e-15}
+      rotation: {x: -0.051705375, y: -0.0014045808, z: -0.075227514, w: 0.995824}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: ji_rig:ShoulderPart1_R
+      parentName: ji_rig:Shoulder_R
+      position: {x: -0.08958141, y: 8.8817837e-17, z: 6.750156e-16}
+      rotation: {x: -0.0000000037252903, y: -0.00000001094304, z: -0.000000011597876, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: ji_rig:ShoulderPart2_R
+      parentName: ji_rig:ShoulderPart1_R
+      position: {x: -0.08958141, y: 1.3322676e-16, z: 6.3948843e-16}
+      rotation: {x: -0.0000000037252903, y: -0.0000000033760443, z: 0.0000000073123374, w: 1}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000004}
+    - name: ji_rig:Elbow_R
+      parentName: ji_rig:ShoulderPart2_R
+      position: {x: -0.08958141, y: 1.687539e-16, z: 7.105427e-16}
+      rotation: {x: -0.000000040206945, y: 0.0000000018626454, z: -0.039498363, w: 0.99921966}
+      scale: {x: 0.99999917, y: 0.99999917, z: 0.9999995}
+    - name: ji_rig:ElbowPart1_R
+      parentName: ji_rig:Elbow_R
+      position: {x: -0.07844744, y: -7.105427e-17, z: 9.947598e-16}
+      rotation: {x: 7.3573155e-11, y: -0.000000001861192, z: 0.0000000037252907, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000006}
+    - name: ji_rig:ElbowPart2_R
+      parentName: ji_rig:ElbowPart1_R
+      position: {x: -0.07844744, y: -1.7763567e-16, z: 8.881784e-16}
+      rotation: {x: -8.8025237e-10, y: 0.000000016742106, z: -0.000000055879354, w: 1}
+      scale: {x: 1, y: 1.0000005, z: 1.0000004}
+    - name: ji_rig:Wrist_R
+      parentName: ji_rig:ElbowPart2_R
+      position: {x: -0.07844744, y: -2.4868996e-16, z: 9.237055e-16}
+      rotation: {x: 0.051084567, y: 0.021730136, z: 0.027212687, w: 0.99808705}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000005}
+    - name: ji_rig:IndexFinger1_R
+      parentName: ji_rig:Wrist_R
+      position: {x: -0.10893105, y: 0.024117103, z: -0.0015203778}
+      rotation: {x: -0.0019312892, y: -0.048813287, z: -0.03753013, w: 0.99810076}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
+    - name: ji_rig:IndexFinger2_R
+      parentName: ji_rig:IndexFinger1_R
+      position: {x: -0.029651638, y: 0, z: -7.9936056e-16}
+      rotation: {x: -0.001, y: -0.039696623, z: 0.0023850307, w: 0.99920845}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ji_rig:IndexFinger3_R
+      parentName: ji_rig:IndexFinger2_R
+      position: {x: -0.021868173, y: 7.105427e-17, z: 5.684342e-16}
+      rotation: {x: -0.016855797, y: -0.036341786, z: 0.000636596, w: 0.9991971}
+      scale: {x: 1, y: 0.9999999, z: 1.0000002}
+    - name: ji_rig:IndexFinger4_R
+      parentName: ji_rig:IndexFinger3_R
+      position: {x: -0.024567012, y: 0, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:MiddleFinger1_R
+      parentName: ji_rig:Wrist_R
+      position: {x: -0.11010317, y: -1.7763568e-17, z: -6.0396133e-16}
+      rotation: {x: -0.002152912, y: -0.09234708, z: -0.011502192, w: 0.9956581}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+    - name: ji_rig:MiddleFinger2_R
+      parentName: ji_rig:MiddleFinger1_R
+      position: {x: -0.034438375, y: 3.5527136e-17, z: -2.1316282e-16}
+      rotation: {x: -0.00021411473, y: -0.037318543, z: 0.00036796115, w: 0.9993034}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1.0000001}
+    - name: ji_rig:MiddleFinger3_R
+      parentName: ji_rig:MiddleFinger2_R
+      position: {x: -0.02400288, y: -7.105427e-17, z: 0}
+      rotation: {x: 0.00047250072, y: 0.0010741652, z: 0.0005142427, w: 0.9999992}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000004}
+    - name: ji_rig:MiddleFinger4_R
+      parentName: ji_rig:MiddleFinger3_R
+      position: {x: -0.027723068, y: 8.881784e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Cup_R
+      parentName: ji_rig:Wrist_R
+      position: {x: -0.021330062, y: -0.015057259, z: 0.00025943134}
+      rotation: {x: -0.03545177, y: -0.020135421, z: -0.023677474, w: 0.99888796}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: ji_rig:PinkyFinger1_R
+      parentName: ji_rig:Cup_R
+      position: {x: -0.07510563, y: -0.029770283, z: -0.015154619}
+      rotation: {x: 0.08009498, y: -0.06136024, z: 0.049535707, w: 0.99366295}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: ji_rig:PinkyFinger2_R
+      parentName: ji_rig:PinkyFinger1_R
+      position: {x: -0.022675114, y: -7.105427e-17, z: -2.842171e-16}
+      rotation: {x: 0.0020092644, y: -0.03823645, z: 0.0004983338, w: 0.99926656}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: ji_rig:PinkyFinger3_R
+      parentName: ji_rig:PinkyFinger2_R
+      position: {x: -0.014082813, y: 0, z: -2.664535e-16}
+      rotation: {x: 0.0185943, y: -0.026569858, z: -0.005527484, w: 0.9994588}
+      scale: {x: 1.0000006, y: 0.9999999, z: 1.0000005}
+    - name: ji_rig:PinkyFinger4_R
+      parentName: ji_rig:PinkyFinger3_R
+      position: {x: -0.02047265, y: -1.7763568e-17, z: -5.684342e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:RingFinger1_R
+      parentName: ji_rig:Cup_R
+      position: {x: -0.08134515, y: -0.010694743, z: -0.0042441767}
+      rotation: {x: 0.088559754, y: -0.04229991, z: 0.043299843, w: 0.9942299}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ji_rig:RingFinger2_R
+      parentName: ji_rig:RingFinger1_R
+      position: {x: -0.02976126, y: 1.0658141e-16, z: 5.684342e-16}
+      rotation: {x: -0.0021334656, y: -0.03847396, z: -0.0012252466, w: 0.9992567}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ji_rig:RingFinger3_R
+      parentName: ji_rig:RingFinger2_R
+      position: {x: -0.022179894, y: 1.0658141e-16, z: 0}
+      rotation: {x: 0.005280196, y: -0.032925397, z: -0.0034269646, w: 0.999438}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ji_rig:RingFinger4_R
+      parentName: ji_rig:RingFinger3_R
+      position: {x: -0.029863436, y: -5.3290704e-17, z: 5.684342e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:ThumbFinger1_R
+      parentName: ji_rig:Wrist_R
+      position: {x: -0.036621295, y: 0.03208573, z: -0.01971327}
+      rotation: {x: -0.52205926, y: 0.15049918, z: -0.2929185, w: 0.7867674}
+      scale: {x: 1, y: 1.0000001, z: 1.0000004}
+    - name: ji_rig:ThumbFinger2_R
+      parentName: ji_rig:ThumbFinger1_R
+      position: {x: -0.04494248, y: -3.0198067e-16, z: 2.4868996e-16}
+      rotation: {x: -0.0030446344, y: -0.04039934, z: -0.0010920314, w: 0.99917847}
+      scale: {x: 1, y: 0.99999964, z: 0.99999976}
+    - name: ji_rig:ThumbFinger3_R
+      parentName: ji_rig:ThumbFinger2_R
+      position: {x: -0.024421215, y: -2.842171e-16, z: -1.0658141e-16}
+      rotation: {x: -0.0017529149, y: -0.04285203, z: -0.0047337813, w: 0.99906874}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999999}
+    - name: ji_rig:ThumbFinger4_R
+      parentName: ji_rig:ThumbFinger3_R
+      position: {x: -0.031374093, y: -2.842171e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Geometry
+      parentName: ji_sitting_iddle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:geo
+      parentName: ji_rig:Geometry
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:head
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:eye_L
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:eyeball_L
+      parentName: ji_rig:eye_L
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:iris_L
+      parentName: ji_rig:eye_L
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:eye_R
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:eyeball_R
+      parentName: ji_rig:eye_R
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:iris_R
+      parentName: ji_rig:eye_R
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:teeth
+      parentName: ji_rig:geo
+      position: {x: -0.000000009536743, y: 1.5683966, z: 0.05477374}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:tongue
+      parentName: ji_rig:teeth
+      position: {x: 0.000000009536743, y: -1.5683966, z: -0.047641564}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:top_jaw
+      parentName: ji_rig:teeth
+      position: {x: 0.000000009536743, y: -1.5683966, z: -0.047641564}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface79
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface80
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface81
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface82
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface83
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface84
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface85
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface86
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface87
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface88
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface89
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface90
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface91
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface92
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface93
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface94
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface77
+      parentName: ji_rig:top_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:lower_jaw
+      parentName: ji_rig:teeth
+      position: {x: 0.000000009536743, y: -1.5683966, z: -0.047641564}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface110
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface109
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface108
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface107
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface106
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface105
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface104
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface103
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface102
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface101
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface100
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface99
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface98
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface97
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface96
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface95
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:polySurface78
+      parentName: ji_rig:lower_jaw
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:Jumpsuit
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:glove_right
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:glove_left
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:shoe_left
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ji_rig:shoe_right
+      parentName: ji_rig:geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
