@@ -67,6 +67,6 @@ public class ColdManager : MonoBehaviour
     {
         var health = m_Character.GetComponent<Health>();
 
-        health.Damage(5f);
+        health.Damage(1f);
     }
 }

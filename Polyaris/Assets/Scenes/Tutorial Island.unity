@@ -56099,6 +56099,7 @@ GameObject:
   - component: {fileID: 1863819378}
   - component: {fileID: 1863819377}
   - component: {fileID: 1863819387}
+  - component: {fileID: 1863819388}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -56295,6 +56296,18 @@ MonoBehaviour:
   timeRemaining: 5
   startTimer: 0
   damagePlayer: 0
+--- !u!114 &1863819388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863819376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f35c3d2fcf54ed7b7bb9881a304dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1867801079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77056,16 +77069,28 @@ MonoBehaviour:
     m_Default: 1
   m_PositioningMode: 1
   m_Grouping: -1
-  m_MinRespawnTime: 2
+  m_MinRespawnTime: 3
   m_MaxRespawnTime: 3
   m_ScheduleRespawnOnDeath: 1
   m_ScheduleRespawnOnDisable: 1
   m_RespawnAudioClipSet:
-    m_AudioConfig: {fileID: 0}
+    m_AudioConfig: {fileID: 11400000, guid: 03fdcb21c2dc0e141ba3c4ac57e55756, type: 2}
     m_AudioClips: []
   m_OnRespawnEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1863819388}
+        m_TargetAssemblyTypeName: PlayerDeathManager, Assembly-CSharp
+        m_MethodName: ReloadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7754555582571700480
 MonoBehaviour:
   m_ObjectHideFlags: 0
