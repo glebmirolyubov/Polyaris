@@ -6,6 +6,11 @@ public class InjuredPilotManager : MonoBehaviour
 {
     public GameObject pickUpPilotText;
     public Animator playerAnimator;
+    public Transform player;
+    public Collider capsuleCollider;
+    public Collider boxCollider;
+
+    Vector3 pilotFinalPosition = new Vector3(0.5f, 0f, 0f);
 
     private bool canPickUpPilot = false;
 
@@ -23,11 +28,30 @@ public class InjuredPilotManager : MonoBehaviour
     void PickUpPilot()
     {
         playerAnimator.SetTrigger("Pick Up Pilot");
+        playerAnimator.SetBool("Injured State", true);
+        pickUpPilotText.SetActive(false);
+        capsuleCollider.enabled = false;
+        boxCollider.enabled = false;
+
+        StartCoroutine("PilotParentingDelay");
+    }
+
+    IEnumerator PilotParentingDelay()
+    {
+        yield return new WaitForSeconds(4f);
+
+        ParentPilotToPlayer();
+    }
+
+    void ParentPilotToPlayer()
+    {
+        transform.SetParent(player);
+        player.transform.localPosition = pilotFinalPosition;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !canPickUpPilot)
         {
             pickUpPilotText.SetActive(true);
             canPickUpPilot = true;

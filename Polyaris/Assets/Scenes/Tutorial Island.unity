@@ -11838,31 +11838,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.008442072
+      value: -0.008441683
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1399324
+      value: 0.13993223
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10859192
+      value: -0.10859
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5220855
+      value: 0.52208555
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.4771467
+      value: 0.47714663
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.51908505
+      value: -0.519085
       objectReference: {fileID: 0}
     - target: {fileID: -43475527947608012, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.47990474
+      value: -0.47990477
       objectReference: {fileID: 0}
     - target: {fileID: 211320809474772304, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13372,9 +13372,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364143988}
-  m_LocalRotation: {x: 0.03107956, y: -0.7717685, z: 0.025556885, w: 0.63462925}
+  m_LocalRotation: {x: 0.031079562, y: -0.77176857, z: 0.025556887, w: 0.63462925}
   m_LocalPosition: {x: 119.491, y: 0.425, z: 91}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450653360014691}
@@ -13422,6 +13422,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpPilotText: {fileID: 1805698570}
   playerAnimator: {fileID: 4430869007918742145}
+  player: {fileID: 7754555582571700475}
+  capsuleCollider: {fileID: 364143990}
+  boxCollider: {fileID: 364143991}
 --- !u!4 &364762571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4206683368507738, guid: 190104e9bd5f8014eaf9a7f5f6f7a173, type: 3}
