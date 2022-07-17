@@ -1,44 +1,9 @@
 fileFormatVersion: 2
-guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4
+guid: d6642697e090f0c47bd0697e656de203
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: eye_mat
-    second: {fileID: 2100000, guid: 74cdd9c71e2b64883b219423891e5062, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gloves_mat
-    second: {fileID: 2100000, guid: 34f9be3fdfc05466ab771e24eac9e629, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: iris_mat
-    second: {fileID: 2100000, guid: 112598b99c4f44f99a6f62aebce2b1c6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ji_face_mat
-    second: {fileID: 2100000, guid: ff34874867b6b4f10a64accad8a29bc5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: jumpsuit_mat
-    second: {fileID: 2100000, guid: 34fc0f95d6fd24723b359900cce48bf2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mouth_mat
-    second: {fileID: 2100000, guid: c56909339624b48c68b7de1fc39f54e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: shoes_mat
-    second: {fileID: 2100000, guid: 6d6e0ce772acf459c9201d9397f608d0, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -283,7 +248,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: IrisJoint_L
+    - boneName: EyeJoint_L
       humanName: LeftEye
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -291,7 +256,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: IrisJoint_R
+    - boneName: EyeJoint_R
       humanName: RightEye
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -556,13 +521,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: ji_rig(Clone)
+    - name: ji_rig_7_7(Clone)
       parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MotionSystem
-      parentName: ji_rig(Clone)
+      parentName: ji_rig_7_7(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -577,80 +542,45 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: DeformationSystem
-      parentName: ji_rig(Clone)
+      parentName: ji_rig_7_7(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Root_M
       parentName: DeformationSystem
       position: {x: -2.0260108e-17, y: 0.97524756, z: -0.013263861}
-      rotation: {x: 0.4858853, y: -0.513727, z: -0.4858853, w: 0.51372707}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Hip_L
-      parentName: Root_M
-      position: {x: 0.047620993, y: -0.0075557255, z: 0.09825479}
-      rotation: {x: 0.9993818, y: 0.031103076, z: 0.0155962715, w: -0.0050437604}
-      scale: {x: 1.0000001, y: 1, z: 1.0000002}
-    - name: HipPart1_L
-      parentName: Hip_L
-      position: {x: 0.12847884, y: -2.1885377e-10, z: 1.837428e-12}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 0.9999999, y: 1.0000001, z: 1}
-    - name: HipPart2_L
-      parentName: HipPart1_L
-      position: {x: 0.12847884, y: -2.1885323e-10, z: 1.8897594e-12}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000002, z: 1}
-    - name: Knee_L
-      parentName: HipPart2_L
-      position: {x: 0.12847884, y: -2.1885284e-10, z: 1.9420555e-12}
-      rotation: {x: -0.00000002468005, y: 0.0000000189757, z: -0.09598273, w: -0.995383}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000005}
-    - name: Ankle_L
-      parentName: Knee_L
-      position: {x: 0.45881483, y: -7.815494e-10, z: 6.5659474e-12}
-      rotation: {x: 0.015443325, y: -0.015681148, z: -0.036817685, w: 0.9990797}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
-    - name: Toes_L
-      parentName: Ankle_L
-      position: {x: 0.06847265, y: -0.13812052, z: 1.3522907e-11}
-      rotation: {x: 0.016563322, y: 0.0150702875, z: 0.67281246, w: -0.7394741}
-      scale: {x: 1.0000002, y: 1.0000007, z: 1}
-    - name: ToesEnd_L
-      parentName: Toes_L
-      position: {x: 0.09201846, y: 1.7763568e-17, z: 5.9932154e-10}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      rotation: {x: 0.48588532, y: -0.513727, z: -0.48588532, w: 0.513727}
       scale: {x: 1, y: 1, z: 1}
     - name: Hip_R
       parentName: Root_M
       position: {x: 0.047620993, y: -0.0075557255, z: -0.09825479}
-      rotation: {x: -0.031102987, y: 0.9993818, z: -0.0050437753, w: -0.015596212}
-      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+      rotation: {x: -0.031103004, y: 0.9993818, z: -0.0050437646, w: -0.015596207}
+      scale: {x: 1, y: 1, z: 1}
     - name: HipPart1_R
       parentName: Hip_R
       position: {x: -0.12847884, y: 0.000000009379017, z: -1.9944402e-12}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: HipPart2_R
       parentName: HipPart1_R
       position: {x: -0.12847884, y: 0.000000009379017, z: -1.9944224e-12}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Knee_R
       parentName: HipPart2_R
       position: {x: -0.12847884, y: 0.000000009379017, z: -1.9944402e-12}
-      rotation: {x: 0.000000016996637, y: -0.000000049360096, z: 0.09598266, w: 0.995383}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000006}
+      rotation: {x: -5.7154415e-17, y: 2.3407813e-17, z: 0.09598265, w: 0.995383}
+      scale: {x: 1, y: 1, z: 1}
     - name: Ankle_R
       parentName: Knee_R
       position: {x: -0.45881483, y: -2.0872192e-15, z: -6.9929483e-12}
-      rotation: {x: 0.015443295, y: -0.015681237, z: -0.03681764, w: 0.9990797}
-      scale: {x: 0.9999996, y: 0.9999999, z: 0.9999996}
+      rotation: {x: 0.015443356, y: -0.015681218, z: -0.036817674, w: 0.99907964}
+      scale: {x: 1, y: 1, z: 1}
     - name: Toes_R
       parentName: Ankle_R
       position: {x: -0.06847265, y: 0.13812052, z: -7.564116e-11}
-      rotation: {x: -0.016564144, y: -0.015070875, z: -0.67281234, w: 0.73947424}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      rotation: {x: -0.01656409, y: -0.01507088, z: -0.6728124, w: 0.7394741}
+      scale: {x: 1, y: 1, z: 1}
     - name: ToesEnd_R
       parentName: Toes_R
       position: {x: -0.09201846, y: -1.4392931e-14, z: 0.00000016716096}
@@ -659,53 +589,53 @@ ModelImporter:
     - name: RootPart1_M
       parentName: Root_M
       position: {x: -0.071769975, y: -8.881784e-18, z: -7.703051e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: RootPart2_M
       parentName: RootPart1_M
       position: {x: -0.071769975, y: -7.9936054e-17, z: -6.1094376e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine1_M
       parentName: RootPart2_M
       position: {x: -0.071769975, y: -8.881784e-18, z: -1.5141086e-16}
-      rotation: {x: -0.000000029802322, y: -0, z: -0.004997596, w: 0.99998754}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+      rotation: {x: 3.8500106e-35, y: 7.703624e-33, z: -0.0049975994, w: 0.99998754}
+      scale: {x: 1, y: 1, z: 1}
     - name: Spine1Part1_M
       parentName: Spine1_M
       position: {x: -0.047867626, y: 4.0856205e-16, z: -2.329578e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999976}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Spine1Part2_M
       parentName: Spine1Part1_M
       position: {x: -0.047867626, y: 4.2188474e-16, z: -2.329578e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Chest_M
       parentName: Spine1Part2_M
       position: {x: -0.047867626, y: 3.907985e-16, z: -6.887492e-17}
-      rotation: {x: -0, y: 0.000000059604638, z: 0.042039867, w: -0.99911594}
-      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999976}
+      rotation: {x: 3.886362e-34, y: 9.236291e-33, z: -0.042039886, w: 0.99911594}
+      scale: {x: 1, y: 1, z: 1}
     - name: Neck_M
       parentName: Chest_M
       position: {x: -0.16641085, y: 1.7763567e-16, z: 4.0873538e-16}
-      rotation: {x: 0.000000023049994, y: 0.0000000305451, z: -0.09208337, w: 0.9957513}
-      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000005}
+      rotation: {x: 0, y: 0, z: -0.09208347, w: 0.9957513}
+      scale: {x: 1, y: 1, z: 1}
     - name: NeckPart1_M
       parentName: Neck_M
       position: {x: -0.026459642, y: -1.4210854e-16, z: 6.5824254e-18}
-      rotation: {x: -0, y: -3.5527137e-15, z: -8.5394924e-16, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: NeckPart2_M
       parentName: NeckPart1_M
       position: {x: -0.026459642, y: 3.5527135e-16, z: 6.5824254e-18}
-      rotation: {x: 0.000000028821612, y: 0.000000008218418, z: -0.000000059604645, w: 1}
-      scale: {x: 1.0000025, y: 1.0000025, z: 1.0000039}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Head_M
       parentName: NeckPart2_M
       position: {x: -0.026459642, y: -1.4210854e-16, z: -2.076608e-17}
-      rotation: {x: -0, y: -0, z: -0.11118823, w: -0.99379945}
-      scale: {x: 1.0000036, y: 1.0000044, z: 1.0000044}
+      rotation: {x: -5.2313113e-32, y: 2.4147543e-32, z: 0.1111883, w: 0.9937994}
+      scale: {x: 1, y: 1, z: 1}
     - name: HeadEnd_M
       parentName: Head_M
       position: {x: -0.17154266, y: -1.5099033e-16, z: 8.4544926e-17}
@@ -716,791 +646,666 @@ ModelImporter:
       position: {x: 1.6269297e-10, y: 0.019410018, z: 1.4945013e-17}
       rotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain0_R
-      parentName: FaceJoint_M
-      position: {x: 0.019578498, y: 0.06196515, z: 0.06192329}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain1_R
-      parentName: FaceJoint_M
-      position: {x: 0.020483155, y: 0.062681705, z: 0.062846355}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain2_R
-      parentName: FaceJoint_M
-      position: {x: 0.022332221, y: 0.06349881, z: 0.06393147}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain3_R
-      parentName: FaceJoint_M
-      position: {x: 0.023994416, y: 0.064362, z: 0.06493639}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain4_R
-      parentName: FaceJoint_M
-      position: {x: 0.029632399, y: 0.065678984, z: 0.067153096}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain5_R
-      parentName: FaceJoint_M
-      position: {x: 0.034080293, y: 0.065772064, z: 0.06778557}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain6_R
-      parentName: FaceJoint_M
-      position: {x: 0.038168143, y: 0.06539243, z: 0.067331515}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain7_R
-      parentName: FaceJoint_M
-      position: {x: 0.04129047, y: 0.064649016, z: 0.06600832}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain8_R
-      parentName: FaceJoint_M
-      position: {x: 0.042783786, y: 0.06408703, z: 0.0631883}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain9_R
-      parentName: FaceJoint_M
-      position: {x: 0.044392433, y: 0.0630061, z: 0.060433857}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain10_R
-      parentName: FaceJoint_M
-      position: {x: 0.045631196, y: 0.06213315, z: 0.057816338}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain11_R
-      parentName: FaceJoint_M
-      position: {x: 0.046174638, y: 0.061756715, z: 0.05699449}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain1_R
-      parentName: FaceJoint_M
-      position: {x: 0.023245687, y: 0.062074404, z: 0.064632945}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain2_R
-      parentName: FaceJoint_M
-      position: {x: 0.02602025, y: 0.061909914, z: 0.06534907}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain3_R
-      parentName: FaceJoint_M
-      position: {x: 0.030558705, y: 0.06120114, z: 0.06605685}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain4_R
-      parentName: FaceJoint_M
-      position: {x: 0.03604069, y: 0.06078717, z: 0.06556894}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain5_R
-      parentName: FaceJoint_M
-      position: {x: 0.04088937, y: 0.060589723, z: 0.063891344}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain6_R
-      parentName: FaceJoint_M
-      position: {x: 0.04294316, y: 0.0609422, z: 0.062473223}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain7_R
-      parentName: FaceJoint_M
-      position: {x: 0.04578958, y: 0.06142224, z: 0.05751471}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain0_L
-      parentName: FaceJoint_M
-      position: {x: -0.019578498, y: 0.06196515, z: 0.06192329}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain1_L
-      parentName: FaceJoint_M
-      position: {x: -0.020483155, y: 0.062681705, z: 0.062846355}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain2_L
-      parentName: FaceJoint_M
-      position: {x: -0.022332221, y: 0.06349881, z: 0.06393147}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain3_L
-      parentName: FaceJoint_M
-      position: {x: -0.023994416, y: 0.064362, z: 0.06493639}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain4_L
-      parentName: FaceJoint_M
-      position: {x: -0.029632399, y: 0.065678984, z: 0.067153096}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain5_L
-      parentName: FaceJoint_M
-      position: {x: -0.034080293, y: 0.065772064, z: 0.06778557}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain6_L
-      parentName: FaceJoint_M
-      position: {x: -0.038168143, y: 0.06539243, z: 0.067331515}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain7_L
-      parentName: FaceJoint_M
-      position: {x: -0.04129047, y: 0.064649016, z: 0.06600832}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain8_L
-      parentName: FaceJoint_M
-      position: {x: -0.042783786, y: 0.06408703, z: 0.0631883}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain9_L
-      parentName: FaceJoint_M
-      position: {x: -0.044392433, y: 0.0630061, z: 0.060433857}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain10_L
-      parentName: FaceJoint_M
-      position: {x: -0.045631196, y: 0.06213315, z: 0.057816338}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidMain11_L
-      parentName: FaceJoint_M
-      position: {x: -0.046174638, y: 0.061756715, z: 0.05699449}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain1_L
-      parentName: FaceJoint_M
-      position: {x: -0.023245687, y: 0.062074404, z: 0.064632945}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain2_L
-      parentName: FaceJoint_M
-      position: {x: -0.02602025, y: 0.061909914, z: 0.06534907}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain3_L
-      parentName: FaceJoint_M
-      position: {x: -0.030558705, y: 0.06120114, z: 0.06605685}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain4_L
-      parentName: FaceJoint_M
-      position: {x: -0.03604069, y: 0.06078717, z: 0.06556894}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain5_L
-      parentName: FaceJoint_M
-      position: {x: -0.04088937, y: 0.060589723, z: 0.063891344}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain6_L
-      parentName: FaceJoint_M
-      position: {x: -0.04294316, y: 0.0609422, z: 0.062473223}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLidMain7_L
-      parentName: FaceJoint_M
-      position: {x: -0.04578958, y: 0.06142224, z: 0.05751471}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLidBaseJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.03171707, y: 0.07127225, z: 0.07365657}
-      rotation: {x: 0.99580574, y: -0.00000005960463, z: -0.09149254, w: 0.00000007450579}
-      scale: {x: 1, y: 1.0000008, z: 1.0000005}
-    - name: upperLidBaseJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.03171707, y: 0.07127225, z: 0.07365657}
-      rotation: {x: -0.000000059604638, y: -0.09149257, z: 0.00000004470348, w: 0.9958058}
-      scale: {x: 1, y: 1, z: 1}
-    - name: EyeBrowInnerJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.009384455, y: 0.07000775, z: 0.07752137}
-      rotation: {x: 0.99552673, y: -0, z: -0.09448089, w: -0.000000014901159}
-      scale: {x: 1, y: 0.9999998, z: 0.9999998}
-    - name: EyeBrowMid1Joint_R
-      parentName: FaceJoint_M
-      position: {x: 0.017075973, y: 0.07380231, z: 0.080348566}
-      rotation: {x: 0.9876803, y: -0.000000029802315, z: -0.15648526, w: 0.000000014901158}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: EyeBrowMid2Joint_R
-      parentName: FaceJoint_M
-      position: {x: 0.03228733, y: 0.07837079, z: 0.07692116}
-      rotation: {x: 0.96035826, y: -0, z: -0.2787687, w: 0.0000000745058}
-      scale: {x: 1, y: 0.99999994, z: 1}
-    - name: EyeBrowMid3Joint_R
-      parentName: FaceJoint_M
-      position: {x: 0.046448387, y: 0.07806271, z: 0.070604965}
-      rotation: {x: 0.9258994, y: -0.00000005960463, z: -0.37777013, w: 0.00000005960463}
-      scale: {x: 1.0000001, y: 1, z: 1.0000002}
-    - name: EyeBrowOuterJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.052855473, y: 0.07823376, z: 0.06610244}
-      rotation: {x: 0.9066378, y: 0.000000029802319, z: -0.42191, w: -0.000000014901159}
-      scale: {x: 0.99999994, y: 0.9999997, z: 0.99999994}
-    - name: EyeBrowCenterJoint_M
-      parentName: FaceJoint_M
-      position: {x: 4.3961786e-16, y: 0.07129742, z: 0.08262499}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: EyeBrowInnerJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.009384455, y: 0.07000775, z: 0.07752137}
-      rotation: {x: 0.000000029802319, y: -0.09448092, z: 0.000000029802319, w: 0.99552673}
-      scale: {x: 1, y: 1, z: 1}
-    - name: EyeBrowMid1Joint_L
-      parentName: FaceJoint_M
-      position: {x: -0.017075973, y: 0.07380231, z: 0.080348566}
-      rotation: {x: -0.00000008940696, y: -0.15648529, z: 0.00000004470348, w: 0.9876804}
-      scale: {x: 1, y: 1, z: 1}
-    - name: EyeBrowMid2Joint_L
-      parentName: FaceJoint_M
-      position: {x: -0.03228733, y: 0.07837079, z: 0.07692116}
-      rotation: {x: -0.000000059604638, y: -0.2787687, z: -0, w: 0.96035826}
-      scale: {x: 1, y: 1, z: 1}
-    - name: EyeBrowMid3Joint_L
-      parentName: FaceJoint_M
-      position: {x: -0.046448387, y: 0.07806271, z: 0.070604965}
-      rotation: {x: -0.000000059604638, y: -0.37777013, z: 0.000000059604638, w: 0.9258995}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: EyeBrowOuterJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.052855473, y: 0.07823376, z: 0.06610244}
-      rotation: {x: -0, y: -0.42191, z: -0.0000000372529, w: 0.9066378}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: LipJoints_M
-      parentName: FaceJoint_M
-      position: {x: 4.5832476e-16, y: -0.011308393, z: 0.08660848}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLipJoint0_M
-      parentName: LipJoints_M
-      position: {x: 3.3050538e-11, y: 0.003848613, z: -0.0019590568}
-      rotation: {x: 0.000000021855596, y: -0.000000070068026, z: -0.00000002808674, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLipJoint1_R
-      parentName: LipJoints_M
-      position: {x: 0.004476591, y: 0.0037891844, z: -0.0019540116}
-      rotation: {x: 0.00045690816, y: 0.14786783, z: -0.013527195, w: 0.98891455}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: upperLipJoint1_L
-      parentName: LipJoints_M
-      position: {x: -0.004476591, y: 0.0037891848, z: -0.0019540116}
-      rotation: {x: 0.00045690782, y: -0.14786798, z: 0.013527145, w: 0.9889145}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: upperLipJoint2_R
-      parentName: LipJoints_M
-      position: {x: 0.008132124, y: 0.0036328654, z: -0.003561899}
-      rotation: {x: 0.0005889741, y: 0.23032404, z: -0.027181897, w: 0.9727341}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLipJoint2_L
-      parentName: LipJoints_M
-      position: {x: -0.008132124, y: 0.0036328663, z: -0.003561899}
-      rotation: {x: 0.00058897433, y: -0.2303242, z: 0.027181858, w: 0.9727341}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
-    - name: upperLipJoint3_R
-      parentName: LipJoints_M
-      position: {x: 0.011534539, y: 0.0033559268, z: -0.0059349965}
-      rotation: {x: -0.000682986, y: 0.28479233, z: -0.044567857, w: 0.9575524}
-      scale: {x: 1.0000001, y: 1, z: 0.99999994}
-    - name: upperLipJoint3_L
-      parentName: LipJoints_M
-      position: {x: -0.011534539, y: 0.003355928, z: -0.0059349965}
-      rotation: {x: -0.000682985, y: -0.28479257, z: 0.044567823, w: 0.9575524}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: upperLipJoint4_R
-      parentName: LipJoints_M
-      position: {x: 0.014853406, y: 0.0028946484, z: -0.008616091}
-      rotation: {x: -0.0051762075, y: 0.3179866, z: -0.0711777, w: 0.9454055}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: upperLipJoint4_L
-      parentName: LipJoints_M
-      position: {x: -0.014853406, y: 0.0028946497, z: -0.008616091}
-      rotation: {x: -0.0051762047, y: -0.31798667, z: 0.07117765, w: 0.9454054}
-      scale: {x: 0.9999999, y: 1, z: 1.0000001}
-    - name: upperLipJoint5_R
-      parentName: LipJoints_M
-      position: {x: 0.018778851, y: 0.0019562743, z: -0.011227999}
-      rotation: {x: -0.021974053, y: 0.3247627, z: -0.13401163, w: 0.93599534}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperLipJoint5_L
-      parentName: LipJoints_M
-      position: {x: -0.018778851, y: 0.001956276, z: -0.011227999}
-      rotation: {x: -0.02197406, y: -0.32476276, z: 0.13401163, w: 0.93599534}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: upperLipJoint6_R
-      parentName: LipJoints_M
-      position: {x: 0.021864824, y: 0.00055585813, z: -0.013227221}
-      rotation: {x: -0.053235542, y: 0.3231987, z: -0.22573206, w: 0.91747135}
-      scale: {x: 0.9999999, y: 1, z: 1.0000001}
-    - name: upperLipJoint6_L
-      parentName: LipJoints_M
-      position: {x: -0.021864826, y: 0.0005558592, z: -0.013227221}
-      rotation: {x: -0.053235587, y: -0.32319877, z: 0.22573209, w: 0.9174713}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
-    - name: upperLipJoint7_R
-      parentName: LipJoints_M
-      position: {x: 0.02361297, y: -0.00079125597, z: -0.014643245}
-      rotation: {x: -0.08151509, y: 0.32158116, z: -0.2888375, w: 0.89806116}
-      scale: {x: 1.0000002, y: 1, z: 1.0000001}
-    - name: upperLipJoint7_L
-      parentName: LipJoints_M
-      position: {x: -0.02361297, y: -0.00079125527, z: -0.014643245}
-      rotation: {x: -0.08151512, y: -0.32158116, z: 0.28883755, w: 0.8980611}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: upperLipJoint8_R
-      parentName: LipJoints_M
-      position: {x: 0.024758862, y: -0.0018790138, z: -0.015517347}
-      rotation: {x: -0.1004179, y: 0.321861, z: -0.31719416, w: 0.88640267}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: upperLipJoint8_L
-      parentName: LipJoints_M
-      position: {x: -0.024758866, y: -0.0018790147, z: -0.015517347}
-      rotation: {x: -0.10041788, y: -0.32186097, z: 0.31719434, w: 0.8864026}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: LipJoint_R
-      parentName: LipJoints_M
-      position: {x: 0.025434047, y: -0.0028769674, z: -0.016571512}
-      rotation: {x: -0.11598797, y: 0.32300463, z: -0.33192328, w: 0.8786591}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
-    - name: LipJoint_L
-      parentName: LipJoints_M
-      position: {x: -0.025434047, y: -0.0028769674, z: -0.016571512}
-      rotation: {x: -0.11598798, y: -0.32300445, z: 0.3319233, w: 0.8786591}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: lowerLipJoint0_M
-      parentName: LipJoints_M
-      position: {x: 8.04366e-18, y: -0.0044492525, z: -0.0022659493}
-      rotation: {x: 0.000000021855692, y: -0.00000004371139, z: 4.815126e-14, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: lowerLipJoint1_R
-      parentName: LipJoints_M
-      position: {x: 0.005170077, y: -0.0043663536, z: -0.0029277885}
-      rotation: {x: -0.00042517032, y: 0.15482661, z: 0.014775531, w: 0.9878311}
-      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
-    - name: lowerLipJoint1_L
-      parentName: LipJoints_M
-      position: {x: -0.005170077, y: -0.0043663536, z: -0.0029277885}
-      rotation: {x: -0.00042517137, y: -0.1548267, z: -0.014775531, w: 0.9878311}
-      scale: {x: 1.0000001, y: 0.9999999, z: 1}
-    - name: lowerLipJoint2_R
-      parentName: LipJoints_M
-      position: {x: 0.009981606, y: -0.004164392, z: -0.00507299}
-      rotation: {x: -0.00002554993, y: 0.24527705, z: 0.023778178, w: 0.9691614}
-      scale: {x: 1, y: 0.9999999, z: 1}
-    - name: lowerLipJoint2_L
-      parentName: LipJoints_M
-      position: {x: -0.009981606, y: -0.004164392, z: -0.00507299}
-      rotation: {x: -0.000025551612, y: -0.24527715, z: -0.02377817, w: 0.96916133}
-      scale: {x: 1, y: 0.9999999, z: 1}
-    - name: lowerLipJoint3_R
-      parentName: LipJoints_M
-      position: {x: 0.015311688, y: -0.0038233572, z: -0.008814577}
-      rotation: {x: 0.0023776037, y: 0.30242738, z: 0.03017335, w: 0.9526918}
-      scale: {x: 0.9999998, y: 1, z: 0.99999994}
-    - name: lowerLipJoint3_L
-      parentName: LipJoints_M
-      position: {x: -0.015311688, y: -0.0038233572, z: -0.008814577}
-      rotation: {x: 0.002377605, y: -0.3024274, z: -0.030173354, w: 0.9526918}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: lowerLipJoint4_R
-      parentName: LipJoints_M
-      position: {x: 0.01961548, y: -0.0034867744, z: -0.011829016}
-      rotation: {x: 0.0060013714, y: 0.32216465, z: 0.03478799, w: 0.94602525}
-      scale: {x: 0.9999999, y: 1, z: 1}
-    - name: lowerLipJoint4_L
-      parentName: LipJoints_M
-      position: {x: -0.01961548, y: -0.0034867744, z: -0.011829016}
-      rotation: {x: 0.006001371, y: -0.32216486, z: -0.034787986, w: 0.94602513}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: lowerLipJoint5_R
-      parentName: LipJoints_M
-      position: {x: 0.022404918, y: -0.0032354954, z: -0.01363969}
-      rotation: {x: 0.009095773, y: 0.3386936, z: 0.039162274, w: 0.94003737}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: lowerLipJoint5_L
-      parentName: LipJoints_M
-      position: {x: -0.022404918, y: -0.0032354954, z: -0.01363969}
-      rotation: {x: 0.009095769, y: -0.3386937, z: -0.039162282, w: 0.9400373}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: lowerLipJoint6_R
-      parentName: LipJoints_M
-      position: {x: 0.023638606, y: -0.003094703, z: -0.014838717}
-      rotation: {x: 0.010973167, y: 0.34572527, z: 0.041188706, w: 0.93736714}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: lowerLipJoint6_L
-      parentName: LipJoints_M
-      position: {x: -0.023638606, y: -0.003094703, z: -0.014838717}
-      rotation: {x: 0.010973165, y: -0.34572536, z: -0.041188706, w: 0.9373671}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: SmileBulgeJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.037648216, y: -0.003210478, z: 0.06355469}
-      rotation: {x: 0.92974645, y: -0.00000005960463, z: -0.36820033, w: 0.00000007450579}
-      scale: {x: 1, y: 1.0000001, z: 1.0000004}
-    - name: FrownBulgeJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.034562312, y: -0.022344999, z: 0.05853166}
-      rotation: {x: 0.92604846, y: -0.00000005960463, z: -0.37740454, w: 0.00000007450579}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: SmileBulgeJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.037648216, y: -0.003210478, z: 0.06355469}
-      rotation: {x: -0.00000008940696, y: -0.3682004, z: 0.000000029802319, w: 0.9297465}
-      scale: {x: 1, y: 1, z: 1}
-    - name: FrownBulgeJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.034562312, y: -0.022344999, z: 0.05853166}
-      rotation: {x: -0.00000005960463, y: -0.37740454, z: 0.000000044703473, w: 0.92604846}
-      scale: {x: 1, y: 1, z: 1}
-    - name: CheekRaiserJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.029587844, y: 0.048639953, z: 0.074932024}
-      rotation: {x: 0.99580574, y: -0.00000005960463, z: -0.09149254, w: 0.00000007450579}
-      scale: {x: 1, y: 1.0000008, z: 1.0000005}
-    - name: CheekRaiserJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.029587844, y: 0.048639953, z: 0.074932024}
-      rotation: {x: -0.000000059604638, y: -0.09149257, z: 0.00000004470348, w: 0.9958058}
-      scale: {x: 1, y: 1, z: 1}
-    - name: CheekJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.053010944, y: 0.0073652356, z: 0.037688017}
-      rotation: {x: 0.83341295, y: -0, z: -0.55265075, w: -0.00000002235174}
-      scale: {x: 1, y: 1, z: 1}
-    - name: CheekJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.053010944, y: 0.0073652356, z: 0.037688017}
-      rotation: {x: 0.000000029802319, y: -0.55265075, z: -0.00000002235174, w: 0.83341295}
-      scale: {x: 1, y: 1, z: 1}
-    - name: NoseJoint_M
-      parentName: FaceJoint_M
-      position: {x: 4.4057262e-16, y: 0.013453035, z: 0.10118743}
-      rotation: {x: 0.000000029802315, y: 0.000000029802315, z: 0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: NoseCornerJoint_R
-      parentName: FaceJoint_M
-      position: {x: 0.014052631, y: 0.012788973, z: 0.07608148}
-      rotation: {x: 0.9899147, y: 0.000000059604638, z: -0.14166467, w: -0.0000000745058}
-      scale: {x: 1.0000002, y: 1, z: 1}
-    - name: NoseCornerJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.014052631, y: 0.012788973, z: 0.07608148}
-      rotation: {x: 0.000000059604638, y: -0.14166468, z: -0.00000004470348, w: 0.9899147}
-      scale: {x: 1, y: 1, z: 1}
-    - name: JawJoint_M
-      parentName: FaceJoint_M
-      position: {x: 5.116752e-16, y: 0.026952485, z: 0.0042206603}
-      rotation: {x: 0.000000029802315, y: -0.000000029802315, z: -0.000000029802315, w: 1}
-      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999998}
-    - name: Tongue0Joint_M
-      parentName: FaceJoint_M
-      position: {x: 5.1492043e-16, y: -0.011753874, z: 0.013256644}
-      rotation: {x: -0.00000003590681, y: 0.70710677, z: -0.000000029802315, w: 0.70710677}
-      scale: {x: 1.0000002, y: 0.9999998, z: 1.0000004}
-    - name: Tongue1Joint_M
-      parentName: Tongue0Joint_M
-      position: {x: -0.016608043, y: 0, z: -1.8932661e-31}
-      rotation: {x: 1.7763564e-15, y: -0, z: 3.5527128e-15, w: 1}
-      scale: {x: 1.0000002, y: 1, z: 1.0000002}
-    - name: Tongue2Joint_M
-      parentName: Tongue1Joint_M
-      position: {x: -0.016608043, y: 2.842171e-16, z: 0}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1, z: 1.0000002}
-    - name: Tongue3Joint_M
-      parentName: Tongue2Joint_M
-      position: {x: -0.016608043, y: 2.842171e-16, z: 0}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000004, y: 1, z: 1.0000002}
-    - name: EyeJoint_L
-      parentName: FaceJoint_M
-      position: {x: -0.03213188, y: 0.06341001, z: 0.05113501}
-      rotation: {x: -0.000000029802315, y: -0.000000029802315, z: -0.000000029802315, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: IrisJoint_L
-      parentName: EyeJoint_L
-      position: {x: 0.00011481523, y: -0.000000076293944, z: 0.012790793}
-      rotation: {x: -0, y: -0, z: -8.88178e-16, w: 1}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
-    - name: PupilJoint_L
-      parentName: IrisJoint_L
-      position: {x: -0.000000005960464, y: 0.000000076293944, z: 0.00025431157}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: EyeJoint_R
       parentName: FaceJoint_M
       position: {x: 0.03253894, y: 0.06371161, z: 0.051207412}
-      rotation: {x: -0.000000029802315, y: -0.000000029802315, z: -0.000000029802315, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: IrisJoint_R
       parentName: EyeJoint_R
       position: {x: -0.00036206108, y: -0.0003016839, z: 0.012866958}
-      rotation: {x: -0, y: -0, z: -8.88178e-16, w: 1}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: PupilJoint_R
       parentName: IrisJoint_R
       position: {x: 0.00048286794, y: 0.000000076293944, z: 0.00014824628}
-      rotation: {x: -0, y: -2.220446e-16, z: -1.2325952e-30, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.03213188, y: 0.06341001, z: 0.05113501}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IrisJoint_L
+      parentName: EyeJoint_L
+      position: {x: 0.00011481523, y: -0.000000076293944, z: 0.012790793}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PupilJoint_L
+      parentName: IrisJoint_L
+      position: {x: -0.000000005960464, y: 0.000000076293944, z: 0.00025431157}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain0_R
+      parentName: FaceJoint_M
+      position: {x: 0.019578498, y: 0.06196515, z: 0.06192329}
+      rotation: {x: 0.0000000020862525, y: -1.5537571e-13, z: 0.0000000025232425, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain1_R
+      parentName: FaceJoint_M
+      position: {x: 0.020483155, y: 0.062681705, z: 0.062846355}
+      rotation: {x: 0.000000007782243, y: 3.2661318e-11, z: 0.000000008060964, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain2_R
+      parentName: FaceJoint_M
+      position: {x: 0.022332221, y: 0.06349881, z: 0.06393147}
+      rotation: {x: 0.0000000053235962, y: 1.0502765e-11, z: 0.0000000042703503, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain3_R
+      parentName: FaceJoint_M
+      position: {x: 0.023994416, y: 0.064362, z: 0.06493639}
+      rotation: {x: -0.000000012435405, y: 8.352946e-11, z: -0.000000007739434, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain4_R
+      parentName: FaceJoint_M
+      position: {x: 0.029632399, y: 0.065678984, z: 0.067153096}
+      rotation: {x: 0.00000001320634, y: 7.620182e-11, z: 0.0000000024072202, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain5_R
+      parentName: FaceJoint_M
+      position: {x: 0.034080293, y: 0.065772064, z: 0.06778557}
+      rotation: {x: -0.000000005068001, y: -3.875711e-11, z: 4.7119697e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain6_R
+      parentName: FaceJoint_M
+      position: {x: 0.038168143, y: 0.06539243, z: 0.067331515}
+      rotation: {x: 0.000000013687474, y: -1.2085516e-10, z: -0.000000004778534, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain7_R
+      parentName: FaceJoint_M
+      position: {x: 0.04129047, y: 0.064649016, z: 0.06600832}
+      rotation: {x: -0.000000007412142, y: 2.7478297e-11, z: 0.0000000043826756, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain8_R
+      parentName: FaceJoint_M
+      position: {x: 0.042783786, y: 0.06408703, z: 0.0631883}
+      rotation: {x: -0.000000002309088, y: 4.15068e-12, z: 0.0000000019744972, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain9_R
+      parentName: FaceJoint_M
+      position: {x: 0.044392433, y: 0.0630061, z: 0.060433857}
+      rotation: {x: -0.00000000975818, y: -1.6136481e-11, z: 0.000000012536627, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain10_R
+      parentName: FaceJoint_M
+      position: {x: 0.045631196, y: 0.06213315, z: 0.057816338}
+      rotation: {x: -0.0000000023789077, y: -1.0327794e-11, z: 0.0000000047126076, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain11_R
+      parentName: FaceJoint_M
+      position: {x: 0.046174638, y: 0.061756715, z: 0.05699449}
+      rotation: {x: 0.0000000022119846, y: 5.7940347e-11, z: -0.000000005211949, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidBaseJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.03171707, y: 0.07127225, z: 0.07365657}
+      rotation: {x: 0.9958058, y: 5.602304e-18, z: -0.09149257, w: 6.0975526e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain1_R
+      parentName: FaceJoint_M
+      position: {x: 0.023245687, y: 0.062074404, z: 0.064632945}
+      rotation: {x: 0.0000000045274517, y: 1.801801e-10, z: 0.0000000031339342, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain2_R
+      parentName: FaceJoint_M
+      position: {x: 0.02602025, y: 0.061909914, z: 0.06534907}
+      rotation: {x: -0.0000000020873059, y: 5.0214e-11, z: -9.621548e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain3_R
+      parentName: FaceJoint_M
+      position: {x: 0.030558705, y: 0.06120114, z: 0.06605685}
+      rotation: {x: -0.000000010325984, y: 1.1778634e-11, z: -0.0000000013770138, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain4_R
+      parentName: FaceJoint_M
+      position: {x: 0.03604069, y: 0.06078717, z: 0.06556894}
+      rotation: {x: -0.000000011778349, y: -1.4157364e-10, z: 0.0000000028718976, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain5_R
+      parentName: FaceJoint_M
+      position: {x: 0.04088937, y: 0.060589723, z: 0.063891344}
+      rotation: {x: 0.00000000942934, y: -1.7819773e-10, z: -0.0000000062077805, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain6_R
+      parentName: FaceJoint_M
+      position: {x: 0.04294316, y: 0.0609422, z: 0.062473223}
+      rotation: {x: 0.000000007673339, y: 3.5549064e-11, z: -0.000000007086495, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain7_R
+      parentName: FaceJoint_M
+      position: {x: 0.04578958, y: 0.06142224, z: 0.05751471}
+      rotation: {x: -0.0000000024743465, y: -4.2950754e-11, z: 0.0000000051982125, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain0_L
+      parentName: FaceJoint_M
+      position: {x: -0.019578498, y: 0.06196515, z: 0.06192329}
+      rotation: {x: 0.000000002174917, y: 2.888783e-13, z: -0.0000000025307607, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain1_L
+      parentName: FaceJoint_M
+      position: {x: -0.020483155, y: 0.062681705, z: 0.062846355}
+      rotation: {x: 0.000000008073897, y: -3.2947492e-11, z: -0.000000008030725, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain2_L
+      parentName: FaceJoint_M
+      position: {x: -0.022332221, y: 0.06349881, z: 0.06393147}
+      rotation: {x: 0.0000000054833578, y: -1.22254646e-11, z: -0.0000000041992023, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain3_L
+      parentName: FaceJoint_M
+      position: {x: -0.023994416, y: 0.064362, z: 0.06493639}
+      rotation: {x: -0.000000012708534, y: -8.181768e-11, z: 0.000000007493107, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain4_L
+      parentName: FaceJoint_M
+      position: {x: -0.029632399, y: 0.065678984, z: 0.067153096}
+      rotation: {x: 0.000000013198444, y: -7.5080255e-11, z: -0.0000000020595043, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain5_L
+      parentName: FaceJoint_M
+      position: {x: -0.034080293, y: 0.065772064, z: 0.06778557}
+      rotation: {x: -0.000000004999452, y: 3.7281567e-11, z: -5.850246e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain6_L
+      parentName: FaceJoint_M
+      position: {x: -0.038168143, y: 0.06539243, z: 0.067331515}
+      rotation: {x: 0.000000013376472, y: 1.1933549e-10, z: 0.0000000049852655, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain7_L
+      parentName: FaceJoint_M
+      position: {x: -0.04129047, y: 0.064649016, z: 0.06600832}
+      rotation: {x: -0.0000000072040782, y: -2.825421e-11, z: -0.0000000044360813, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain8_L
+      parentName: FaceJoint_M
+      position: {x: -0.042783786, y: 0.06408703, z: 0.0631883}
+      rotation: {x: -0.000000002230826, y: -7.0050905e-12, z: -0.0000000019714588, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain9_L
+      parentName: FaceJoint_M
+      position: {x: -0.044392433, y: 0.0630061, z: 0.060433857}
+      rotation: {x: -0.000000009387222, y: 1.40995765e-11, z: -0.000000012377056, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain10_L
+      parentName: FaceJoint_M
+      position: {x: -0.045631196, y: 0.06213315, z: 0.057816338}
+      rotation: {x: -0.000000002288786, y: 1.09918056e-11, z: -0.0000000046243773, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidMain11_L
+      parentName: FaceJoint_M
+      position: {x: -0.046174638, y: 0.061756715, z: 0.05699449}
+      rotation: {x: 0.0000000021326423, y: -5.752053e-11, z: 0.00000000511106, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLidBaseJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.03171707, y: 0.07127225, z: 0.07365657}
+      rotation: {x: 0, y: -0.09149257, z: -0, w: 0.9958058}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain1_L
+      parentName: FaceJoint_M
+      position: {x: -0.023245687, y: 0.062074404, z: 0.064632945}
+      rotation: {x: 0.0000000046615356, y: -1.8187853e-10, z: -0.0000000030688627, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain2_L
+      parentName: FaceJoint_M
+      position: {x: -0.02602025, y: 0.061909914, z: 0.06534907}
+      rotation: {x: -0.0000000021322646, y: -4.8553415e-11, z: 9.16812e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain3_L
+      parentName: FaceJoint_M
+      position: {x: -0.030558705, y: 0.06120114, z: 0.06605685}
+      rotation: {x: -0.000000010406314, y: -8.5994024e-12, z: 0.0000000010971151, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain4_L
+      parentName: FaceJoint_M
+      position: {x: -0.03604069, y: 0.06078717, z: 0.06556894}
+      rotation: {x: -0.0000000116632, y: 1.3735994e-10, z: -0.0000000031584737, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain5_L
+      parentName: FaceJoint_M
+      position: {x: -0.04088937, y: 0.060589723, z: 0.063891344}
+      rotation: {x: 0.00000000921494, y: 1.7502e-10, z: 0.0000000063262484, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain6_L
+      parentName: FaceJoint_M
+      position: {x: -0.04294316, y: 0.0609422, z: 0.062473223}
+      rotation: {x: 0.000000007453614, y: -3.6826667e-11, z: 0.0000000071072117, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLidMain7_L
+      parentName: FaceJoint_M
+      position: {x: -0.04578958, y: 0.06142224, z: 0.05751471}
+      rotation: {x: -0.0000000023897644, y: 4.0663535e-11, z: -0.0000000051160223, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowInnerJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.009384455, y: 0.07000775, z: 0.07752137}
+      rotation: {x: 0.9955267, y: 5.7852847e-18, z: -0.094480865, w: 6.095843e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowMid1Joint_R
+      parentName: FaceJoint_M
+      position: {x: 0.017075973, y: 0.07380231, z: 0.080348566}
+      rotation: {x: 0.9876803, y: 9.58196e-18, z: -0.15648527, w: 6.0477974e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowMid2Joint_R
+      parentName: FaceJoint_M
+      position: {x: 0.03228733, y: 0.07837079, z: 0.07692116}
+      rotation: {x: 0.96035826, y: 1.706966e-17, z: -0.2787687, w: 5.8804984e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowMid3Joint_R
+      parentName: FaceJoint_M
+      position: {x: 0.046448387, y: 0.07806271, z: 0.070604965}
+      rotation: {x: 0.92589945, y: 2.3131748e-17, z: -0.37777013, w: 5.6694986e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowOuterJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.052855473, y: 0.07823376, z: 0.06610244}
+      rotation: {x: 0.90663767, y: 2.583454e-17, z: -0.42191008, w: 5.5515545e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowCenterJoint_M
+      parentName: FaceJoint_M
+      position: {x: 4.3961786e-16, y: 0.07129742, z: 0.08262499}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowInnerJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.009384455, y: 0.07000775, z: 0.07752137}
+      rotation: {x: 0, y: -0.094480865, z: -0, w: 0.9955267}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowMid1Joint_L
+      parentName: FaceJoint_M
+      position: {x: -0.017075973, y: 0.07380231, z: 0.080348566}
+      rotation: {x: 0, y: -0.15648527, z: -0, w: 0.9876803}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowMid2Joint_L
+      parentName: FaceJoint_M
+      position: {x: -0.03228733, y: 0.07837079, z: 0.07692116}
+      rotation: {x: 0, y: -0.2787687, z: -0, w: 0.96035826}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowMid3Joint_L
+      parentName: FaceJoint_M
+      position: {x: -0.046448387, y: 0.07806271, z: 0.070604965}
+      rotation: {x: 0, y: -0.37777013, z: -0, w: 0.92589945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EyeBrowOuterJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.052855473, y: 0.07823376, z: 0.06610244}
+      rotation: {x: 0, y: -0.42191008, z: -0, w: 0.90663767}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LipJoints_M
+      parentName: FaceJoint_M
+      position: {x: 4.5832476e-16, y: -0.011308393, z: 0.08660848}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint0_M
+      parentName: LipJoints_M
+      position: {x: 3.3050538e-11, y: 0.003848613, z: -0.0019590568}
+      rotation: {x: -2.0904458e-15, y: -0.00000007006803, z: -0.000000028086719, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint1_R
+      parentName: LipJoints_M
+      position: {x: 0.004476591, y: 0.0037891844, z: -0.0019540116}
+      rotation: {x: 0.00045688567, y: 0.14786784, z: -0.013527195, w: 0.9889145}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint1_L
+      parentName: LipJoints_M
+      position: {x: -0.004476591, y: 0.0037891848, z: -0.0019540116}
+      rotation: {x: 0.00045688546, y: -0.14786796, z: 0.013527143, w: 0.9889145}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint2_R
+      parentName: LipJoints_M
+      position: {x: 0.008132124, y: 0.0036328654, z: -0.003561899}
+      rotation: {x: 0.00058895006, y: 0.23032407, z: -0.027181903, w: 0.9727341}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint2_L
+      parentName: LipJoints_M
+      position: {x: -0.008132124, y: 0.0036328663, z: -0.003561899}
+      rotation: {x: 0.0005889514, y: -0.2303242, z: 0.027181858, w: 0.9727341}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint3_R
+      parentName: LipJoints_M
+      position: {x: 0.011534539, y: 0.0033559268, z: -0.0059349965}
+      rotation: {x: -0.000683006, y: 0.28479236, z: -0.044567846, w: 0.9575524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint3_L
+      parentName: LipJoints_M
+      position: {x: -0.011534539, y: 0.003355928, z: -0.0059349965}
+      rotation: {x: -0.00068300276, y: -0.28479248, z: 0.0445678, w: 0.9575524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint4_R
+      parentName: LipJoints_M
+      position: {x: 0.014853406, y: 0.0028946484, z: -0.008616091}
+      rotation: {x: -0.0051762257, y: 0.31798655, z: -0.07117767, w: 0.9454055}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint4_L
+      parentName: LipJoints_M
+      position: {x: -0.014853406, y: 0.0028946497, z: -0.008616091}
+      rotation: {x: -0.0051762215, y: -0.31798664, z: 0.07117765, w: 0.9454054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint5_R
+      parentName: LipJoints_M
+      position: {x: 0.018778851, y: 0.0019562743, z: -0.011227999}
+      rotation: {x: -0.021974063, y: 0.32476264, z: -0.13401158, w: 0.93599534}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint5_L
+      parentName: LipJoints_M
+      position: {x: -0.018778851, y: 0.001956276, z: -0.011227999}
+      rotation: {x: -0.02197406, y: -0.32476273, z: 0.1340116, w: 0.9359953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint6_R
+      parentName: LipJoints_M
+      position: {x: 0.021864824, y: 0.00055585813, z: -0.013227221}
+      rotation: {x: -0.053235583, y: 0.3231987, z: -0.225732, w: 0.91747135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint6_L
+      parentName: LipJoints_M
+      position: {x: -0.021864826, y: 0.0005558592, z: -0.013227221}
+      rotation: {x: -0.053235587, y: -0.32319877, z: 0.22573207, w: 0.91747135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint7_R
+      parentName: LipJoints_M
+      position: {x: 0.02361297, y: -0.00079125597, z: -0.014643245}
+      rotation: {x: -0.08151511, y: 0.32158116, z: -0.28883743, w: 0.89806116}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint7_L
+      parentName: LipJoints_M
+      position: {x: -0.02361297, y: -0.00079125527, z: -0.014643245}
+      rotation: {x: -0.08151512, y: -0.32158113, z: 0.28883752, w: 0.8980611}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint8_R
+      parentName: LipJoints_M
+      position: {x: 0.024758862, y: -0.0018790138, z: -0.015517347}
+      rotation: {x: -0.1004179, y: 0.32186103, z: -0.31719416, w: 0.88640267}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperLipJoint8_L
+      parentName: LipJoints_M
+      position: {x: -0.024758866, y: -0.0018790147, z: -0.015517347}
+      rotation: {x: -0.10041792, y: -0.32186097, z: 0.31719428, w: 0.8864026}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LipJoint_R
+      parentName: LipJoints_M
+      position: {x: 0.025434047, y: -0.0028769674, z: -0.016571512}
+      rotation: {x: -0.115987964, y: 0.32300457, z: -0.33192313, w: 0.8786592}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LipJoint_L
+      parentName: LipJoints_M
+      position: {x: -0.025434047, y: -0.0028769674, z: -0.016571512}
+      rotation: {x: -0.11598798, y: -0.3230045, z: 0.33192325, w: 0.8786591}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint0_M
+      parentName: LipJoints_M
+      position: {x: 8.04366e-18, y: -0.0044492525, z: -0.0022659493}
+      rotation: {x: -1.2246262e-16, y: -0.00000004371139, z: 4.719592e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint1_R
+      parentName: LipJoints_M
+      position: {x: 0.005170077, y: -0.0043663536, z: -0.0029277885}
+      rotation: {x: -0.00042519145, y: 0.15482663, z: 0.014775535, w: 0.9878311}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint1_L
+      parentName: LipJoints_M
+      position: {x: -0.005170077, y: -0.0043663536, z: -0.0029277885}
+      rotation: {x: -0.00042519273, y: -0.1548267, z: -0.014775534, w: 0.9878311}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint2_R
+      parentName: LipJoints_M
+      position: {x: 0.009981606, y: -0.004164392, z: -0.00507299}
+      rotation: {x: -0.00002557271, y: 0.24527705, z: 0.023778178, w: 0.9691614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint2_L
+      parentName: LipJoints_M
+      position: {x: -0.009981606, y: -0.004164392, z: -0.00507299}
+      rotation: {x: -0.00002557479, y: -0.24527714, z: -0.023778178, w: 0.96916133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint3_R
+      parentName: LipJoints_M
+      position: {x: 0.015311688, y: -0.0038233572, z: -0.008814577}
+      rotation: {x: 0.0023775843, y: 0.30242732, z: 0.030173352, w: 0.9526918}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint3_L
+      parentName: LipJoints_M
+      position: {x: -0.015311688, y: -0.0038233572, z: -0.008814577}
+      rotation: {x: 0.0023775818, y: -0.3024274, z: -0.030173352, w: 0.95269173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint4_R
+      parentName: LipJoints_M
+      position: {x: 0.01961548, y: -0.0034867744, z: -0.011829016}
+      rotation: {x: 0.0060013523, y: 0.3221647, z: 0.034787998, w: 0.9460252}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint4_L
+      parentName: LipJoints_M
+      position: {x: -0.01961548, y: -0.0034867744, z: -0.011829016}
+      rotation: {x: 0.0060013495, y: -0.3221648, z: -0.034787998, w: 0.9460252}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint5_R
+      parentName: LipJoints_M
+      position: {x: 0.022404918, y: -0.0032354954, z: -0.01363969}
+      rotation: {x: 0.009095756, y: 0.33869356, z: 0.03916229, w: 0.94003737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint5_L
+      parentName: LipJoints_M
+      position: {x: -0.022404918, y: -0.0032354954, z: -0.01363969}
+      rotation: {x: 0.009095754, y: -0.33869368, z: -0.039162293, w: 0.94003737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint6_R
+      parentName: LipJoints_M
+      position: {x: 0.023638606, y: -0.003094703, z: -0.014838717}
+      rotation: {x: 0.010973146, y: 0.34572524, z: 0.041188706, w: 0.93736714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerLipJoint6_L
+      parentName: LipJoints_M
+      position: {x: -0.023638606, y: -0.003094703, z: -0.014838717}
+      rotation: {x: 0.010973143, y: -0.34572536, z: -0.041188713, w: 0.93736714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SmileBulgeJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.037648216, y: -0.003210478, z: 0.06355469}
+      rotation: {x: 0.9297465, y: 2.2545765e-17, z: -0.3682003, w: 5.6930553e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FrownBulgeJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.034562312, y: -0.022344999, z: 0.05853166}
+      rotation: {x: 0.92604846, y: 2.3109368e-17, z: -0.37740463, w: 5.670411e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SmileBulgeJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.037648216, y: -0.003210478, z: 0.06355469}
+      rotation: {x: 0, y: -0.3682003, z: -0, w: 0.9297465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FrownBulgeJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.034562312, y: -0.022344999, z: 0.05853166}
+      rotation: {x: 0, y: -0.37740463, z: -0, w: 0.92604846}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CheekRaiserJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.029587844, y: 0.048639953, z: 0.074932024}
+      rotation: {x: 0.9958058, y: 5.602304e-18, z: -0.09149257, w: 6.0975526e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CheekRaiserJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.029587844, y: 0.048639953, z: 0.074932024}
+      rotation: {x: 0, y: -0.09149257, z: -0, w: 0.9958058}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CheekJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.053010944, y: 0.0073652356, z: 0.037688017}
+      rotation: {x: 0.83341295, y: 3.38401e-17, z: -0.55265075, w: 5.1031823e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CheekJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.053010944, y: 0.0073652356, z: 0.037688017}
+      rotation: {x: 0, y: -0.55265075, z: -0, w: 0.83341295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JawJoint_M
+      parentName: FaceJoint_M
+      position: {x: 5.116752e-16, y: 0.026952485, z: 0.0042206603}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperTeethJoint_M
+      parentName: FaceJoint_M
+      position: {x: 4.9425643e-16, y: -0.00010668792, z: 0.036106974}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: lowerTeethJoint_M
       parentName: FaceJoint_M
       position: {x: 4.992989e-16, y: -0.018925505, z: 0.03600038}
-      rotation: {x: 0.000000029802315, y: -0.000000029802315, z: -0.000000029802315, w: 1}
-      scale: {x: 1, y: 1.0000004, z: 0.9999997}
-    - name: upperTeethJoint_M
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: NoseJoint_M
       parentName: FaceJoint_M
-      position: {x: 4.9425643e-16, y: -0.00010668792, z: 0.036106974}
-      rotation: {x: 0.000000029802315, y: -0.000000029802315, z: -0.000000029802315, w: 1}
-      scale: {x: 1, y: 1.0000018, z: 1.0000018}
-    - name: Scapula_L
-      parentName: Chest_M
-      position: {x: -0.08835984, y: 0.001060862, z: 0.08045014}
-      rotation: {x: -0.7058044, y: 0.04391736, z: -0.7034644, w: 0.071059234}
-      scale: {x: 1.0000012, y: 1.0000004, z: 1.0000004}
-    - name: Shoulder_L
-      parentName: Scapula_L
-      position: {x: 0.11381149, y: 6.965317e-14, z: -5.968559e-15}
-      rotation: {x: 0.051705375, y: 0.0014045862, z: 0.075227514, w: -0.99582404}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: ShoulderPart1_L
-      parentName: Shoulder_L
-      position: {x: 0.08958141, y: -2.4868996e-16, z: -2.842171e-16}
-      rotation: {x: -0, y: -0, z: 0.0000000036015986, w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: ShoulderPart2_L
-      parentName: ShoulderPart1_L
-      position: {x: 0.08958141, y: -2.1316282e-16, z: 0}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: Elbow_L
-      parentName: ShoulderPart2_L
-      position: {x: 0.08958141, y: -3.1974422e-16, z: 5.684342e-16}
-      rotation: {x: -0.000000039684437, y: -0.0000000037252903, z: -0.039498366, w: 0.99921966}
-      scale: {x: 0.9999998, y: 0.9999998, z: 0.9999998}
-    - name: ElbowPart1_L
-      parentName: Elbow_L
-      position: {x: 0.07844744, y: -1.0658141e-16, z: -8.5265126e-16}
-      rotation: {x: -0, y: -0, z: -1.4783605e-16, w: 1}
-      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000001}
-    - name: ElbowPart2_L
-      parentName: ElbowPart1_L
-      position: {x: 0.07844744, y: -1.0658141e-16, z: -2.842171e-16}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000002}
-    - name: Wrist_L
-      parentName: ElbowPart2_L
-      position: {x: 0.07844744, y: -1.7763567e-16, z: -8.5265126e-16}
-      rotation: {x: -0.051084585, y: -0.021729967, z: -0.027212719, w: -0.998087}
-      scale: {x: 1.0000011, y: 1.0000004, z: 1.0000002}
-    - name: IndexFinger1_L
-      parentName: Wrist_L
-      position: {x: 0.10893105, y: -0.024117103, z: 0.0015203778}
-      rotation: {x: 0.0019312592, y: 0.04881329, z: 0.03753016, w: -0.99810076}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: IndexFinger2_L
-      parentName: IndexFinger1_L
-      position: {x: 0.029651638, y: -5.3290704e-17, z: 1.1368684e-15}
-      rotation: {x: -0.0010000684, y: -0.039696444, z: 0.0023846535, w: 0.99920845}
-      scale: {x: 1.0000004, y: 0.99999994, z: 0.99999994}
-    - name: IndexFinger3_L
-      parentName: IndexFinger2_L
-      position: {x: 0.021868173, y: 0, z: -1.4210854e-15}
-      rotation: {x: -0.016855815, y: -0.036341216, z: 0.00063682056, w: 0.9991971}
-      scale: {x: 1.0000005, y: 1.0000001, z: 0.99999994}
-    - name: IndexFinger4_L
-      parentName: IndexFinger3_L
-      position: {x: 0.024567012, y: -3.5527136e-17, z: 0}
+      position: {x: 4.4057262e-16, y: 0.013453035, z: 0.10118743}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: MiddleFinger1_L
-      parentName: Wrist_L
-      position: {x: 0.11010317, y: 3.5527136e-17, z: 2.842171e-16}
-      rotation: {x: 0.00215299, y: 0.092345536, z: 0.011502213, w: -0.9956583}
-      scale: {x: 0.99999994, y: 1, z: 1.0000001}
-    - name: MiddleFinger2_L
-      parentName: MiddleFinger1_L
-      position: {x: 0.034438375, y: 0, z: 0}
-      rotation: {x: -0.00021397245, y: -0.037320405, z: 0.00036958384, w: 0.9993033}
-      scale: {x: 1.0000002, y: 0.99999994, z: 1}
-    - name: MiddleFinger3_L
-      parentName: MiddleFinger2_L
-      position: {x: 0.02400288, y: -2.6645352e-17, z: 5.684342e-16}
-      rotation: {x: 0.00047240104, y: 0.0010741428, z: 0.0005141969, w: 0.99999917}
-      scale: {x: 1.0000002, y: 1, z: 1}
-    - name: MiddleFinger4_L
-      parentName: MiddleFinger3_L
-      position: {x: 0.027723068, y: 8.881784e-18, z: -8.5265126e-16}
+    - name: NoseCornerJoint_R
+      parentName: FaceJoint_M
+      position: {x: 0.014052631, y: 0.012788973, z: 0.07608148}
+      rotation: {x: 0.9899147, y: 8.674462e-18, z: -0.14166471, w: 6.0614796e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: NoseCornerJoint_L
+      parentName: FaceJoint_M
+      position: {x: -0.014052631, y: 0.012788973, z: 0.07608148}
+      rotation: {x: 0, y: -0.14166471, z: -0, w: 0.9899147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tongue0Joint_M
+      parentName: FaceJoint_M
+      position: {x: 5.1492043e-16, y: -0.011753874, z: 0.013256644}
+      rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tongue1Joint_M
+      parentName: Tongue0Joint_M
+      position: {x: -0.016608043, y: 0, z: -1.8932661e-31}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Cup_L
-      parentName: Wrist_L
-      position: {x: 0.021330062, y: 0.015057259, z: -0.00025943134}
-      rotation: {x: 0.035451706, y: 0.020135436, z: 0.023677487, w: -0.998888}
-      scale: {x: 0.9999998, y: 1, z: 1.0000002}
-    - name: PinkyFinger1_L
-      parentName: Cup_L
-      position: {x: 0.07510563, y: 0.029770283, z: 0.015154619}
-      rotation: {x: -0.080095105, y: 0.06135936, z: -0.049535245, w: -0.993663}
-      scale: {x: 0.9999996, y: 0.99999994, z: 0.9999997}
-    - name: PinkyFinger2_L
-      parentName: PinkyFinger1_L
-      position: {x: 0.022675114, y: -1.0658141e-16, z: -8.5265126e-16}
-      rotation: {x: 0.0020092938, y: -0.038234286, z: 0.00050168176, w: 0.9992666}
-      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000001}
-    - name: PinkyFinger3_L
-      parentName: PinkyFinger2_L
-      position: {x: 0.014082813, y: -5.3290704e-17, z: 0}
-      rotation: {x: 0.01859441, y: -0.026569815, z: -0.0055274586, w: 0.99945873}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: PinkyFinger4_L
-      parentName: PinkyFinger3_L
-      position: {x: 0.02047265, y: -1.7763568e-17, z: 2.842171e-16}
+    - name: Tongue2Joint_M
+      parentName: Tongue1Joint_M
+      position: {x: -0.016608043, y: 2.842171e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: RingFinger1_L
-      parentName: Cup_L
-      position: {x: 0.08134515, y: 0.010694743, z: 0.0042441767}
-      rotation: {x: -0.088559635, y: 0.04229991, z: -0.043299876, w: -0.9942299}
-      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
-    - name: RingFinger2_L
-      parentName: RingFinger1_L
-      position: {x: 0.02976126, y: -1.7763567e-16, z: -5.684342e-16}
-      rotation: {x: -0.0021333462, y: -0.038473744, z: -0.0012252716, w: 0.9992566}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: RingFinger3_L
-      parentName: RingFinger2_L
-      position: {x: 0.022179894, y: -1.0658141e-16, z: 1.1368684e-15}
-      rotation: {x: 0.005280186, y: -0.032925464, z: -0.0034269425, w: 0.999438}
-      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000004}
-    - name: RingFinger4_L
-      parentName: RingFinger3_L
-      position: {x: 0.029863436, y: 5.3290704e-17, z: -1.1368684e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ThumbFinger1_L
-      parentName: Wrist_L
-      position: {x: 0.036621295, y: -0.03208573, z: 0.01971327}
-      rotation: {x: 0.522059, y: -0.15049976, z: 0.29291964, w: -0.78676695}
-      scale: {x: 0.9999998, y: 0.9999998, z: 1.0000002}
-    - name: ThumbFinger2_L
-      parentName: ThumbFinger1_L
-      position: {x: 0.04494248, y: -5.684342e-16, z: -1.7763567e-16}
-      rotation: {x: -0.0030444849, y: -0.04039728, z: -0.0010908392, w: 0.99917847}
-      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000006}
-    - name: ThumbFinger3_L
-      parentName: ThumbFinger2_L
-      position: {x: 0.024421215, y: 8.5265126e-16, z: 0}
-      rotation: {x: -0.0017529118, y: -0.04285201, z: -0.0047337855, w: 0.9990687}
-      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
-    - name: ThumbFinger4_L
-      parentName: ThumbFinger3_L
-      position: {x: 0.031374093, y: -2.842171e-16, z: 1.4210854e-16}
+    - name: Tongue3Joint_M
+      parentName: Tongue2Joint_M
+      position: {x: -0.016608043, y: 2.842171e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Scapula_R
       parentName: Chest_M
       position: {x: -0.08835984, y: 0.001060862, z: -0.08045014}
-      rotation: {x: -0.043917328, y: -0.70580435, z: 0.07105922, w: 0.7034644}
-      scale: {x: 1.0000013, y: 1.0000002, z: 1.0000004}
+      rotation: {x: -0.043917328, y: -0.7058044, z: 0.07105922, w: 0.7034644}
+      scale: {x: 1, y: 1, z: 1}
     - name: Shoulder_R
       parentName: Scapula_R
       position: {x: -0.11381149, y: -5.169198e-15, z: 5.968559e-15}
-      rotation: {x: -0.051705375, y: -0.0014045875, z: -0.075227514, w: 0.995824}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+      rotation: {x: -0.051705457, y: -0.001404585, z: -0.0752275, w: 0.995824}
+      scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPart1_R
       parentName: Shoulder_R
       position: {x: -0.08958141, y: 2.4868996e-16, z: -2.842171e-16}
-      rotation: {x: -0, y: -0, z: 0.0000000035361154, w: 1}
-      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: ShoulderPart2_R
       parentName: ShoulderPart1_R
       position: {x: -0.08958141, y: 3.1974422e-16, z: 5.684342e-16}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000001}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Elbow_R
       parentName: ShoulderPart2_R
       position: {x: -0.08958141, y: 1.7763567e-16, z: 8.5265126e-16}
-      rotation: {x: -0.00000003979949, y: -0.0000000037252907, z: -0.039498374, w: 0.99921966}
-      scale: {x: 0.999999, y: 0.9999997, z: 0.9999998}
+      rotation: {x: 0, y: 0, z: -0.039498363, w: 0.99921966}
+      scale: {x: 1, y: 1, z: 1}
     - name: ElbowPart1_R
       parentName: Elbow_R
       position: {x: -0.07844744, y: 0, z: 1.1368684e-15}
-      rotation: {x: -0, y: 2.2204463e-16, z: 0.0000000037252903, w: 1}
-      scale: {x: 1.0000017, y: 1.0000011, z: 1.0000005}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: ElbowPart2_R
       parentName: ElbowPart1_R
       position: {x: -0.07844744, y: 7.105427e-17, z: -5.684342e-16}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000011, y: 1.0000007, z: 1.0000004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Wrist_R
       parentName: ElbowPart2_R
       position: {x: -0.07844744, y: 3.5527136e-17, z: 8.5265126e-16}
-      rotation: {x: 0.05108457, y: 0.021730117, z: 0.027212618, w: 0.99808705}
-      scale: {x: 1.0000012, y: 1.0000005, z: 1.0000004}
-    - name: IndexFinger1_R
-      parentName: Wrist_R
-      position: {x: -0.10893105, y: 0.024117103, z: -0.0015203778}
-      rotation: {x: -0.0019312592, y: -0.0488133, z: -0.03753016, w: 0.99810076}
-      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
-    - name: IndexFinger2_R
-      parentName: IndexFinger1_R
-      position: {x: -0.029651638, y: 1.7763568e-17, z: -1.7053025e-15}
-      rotation: {x: -0.0010000928, y: -0.03969718, z: 0.0023850435, w: 0.99920845}
-      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
-    - name: IndexFinger3_R
-      parentName: IndexFinger2_R
-      position: {x: -0.021868173, y: 8.881784e-18, z: 1.4210854e-15}
-      rotation: {x: -0.016855793, y: -0.036338635, z: 0.00063894526, w: 0.9991972}
-      scale: {x: 1.0000006, y: 1.0000001, z: 0.99999994}
-    - name: IndexFinger4_R
-      parentName: IndexFinger3_R
-      position: {x: -0.024567012, y: 0, z: -2.842171e-16}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+      rotation: {x: 0.0510847, y: 0.021730071, z: 0.027212678, w: 0.998087}
       scale: {x: 1, y: 1, z: 1}
     - name: MiddleFinger1_R
       parentName: Wrist_R
       position: {x: -0.11010317, y: 8.881784e-18, z: -8.5265126e-16}
-      rotation: {x: -0.0021529563, y: -0.092347935, z: -0.011502249, w: 0.99565804}
-      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+      rotation: {x: -0.0021530315, y: -0.092346914, z: -0.011502255, w: 0.99565816}
+      scale: {x: 1, y: 1, z: 1}
     - name: MiddleFinger2_R
       parentName: MiddleFinger1_R
       position: {x: -0.034438375, y: 0, z: -2.842171e-16}
-      rotation: {x: -0.00021399112, y: -0.037315745, z: 0.00036821113, w: 0.99930346}
-      scale: {x: 1.000001, y: 1.0000005, z: 1.0000004}
+      rotation: {x: -0.00021391378, y: -0.037321247, z: 0.00036811066, w: 0.9993032}
+      scale: {x: 1, y: 1, z: 1}
     - name: MiddleFinger3_R
       parentName: MiddleFinger2_R
       position: {x: -0.02400288, y: -8.881784e-18, z: 5.684342e-16}
-      rotation: {x: 0.00047231442, y: 0.0010741727, z: 0.0005142259, w: 0.99999917}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      rotation: {x: 0.00047233995, y: 0.0010741898, z: 0.0005142248, w: 0.99999917}
+      scale: {x: 1, y: 1, z: 1}
     - name: MiddleFinger4_R
       parentName: MiddleFinger3_R
       position: {x: -0.027723068, y: 8.881784e-18, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger1_R
+      parentName: Wrist_R
+      position: {x: -0.036621295, y: 0.03208573, z: -0.01971327}
+      rotation: {x: -0.5220596, y: 0.15049855, z: -0.2929181, w: 0.78676736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger2_R
+      parentName: ThumbFinger1_R
+      position: {x: -0.04494248, y: 0, z: 1.0658141e-16}
+      rotation: {x: -0.0030445154, y: -0.040400904, z: -0.0010912678, w: 0.99917835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger3_R
+      parentName: ThumbFinger2_R
+      position: {x: -0.024421215, y: -2.842171e-16, z: -7.105427e-17}
+      rotation: {x: -0.0017529008, y: -0.04285204, z: -0.0047337916, w: 0.9990687}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger4_R
+      parentName: ThumbFinger3_R
+      position: {x: -0.031374093, y: -2.842171e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger1_R
+      parentName: Wrist_R
+      position: {x: -0.10893105, y: 0.024117103, z: -0.0015203778}
+      rotation: {x: -0.0019313397, y: -0.04881329, z: -0.037530154, w: 0.9981007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger2_R
+      parentName: IndexFinger1_R
+      position: {x: -0.029651638, y: 1.7763568e-17, z: -1.7053025e-15}
+      rotation: {x: -0.0010001526, y: -0.039696027, z: 0.0023856838, w: 0.99920845}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger3_R
+      parentName: IndexFinger2_R
+      position: {x: -0.021868173, y: 8.881784e-18, z: 1.4210854e-15}
+      rotation: {x: -0.016855577, y: -0.03633938, z: 0.0006356144, w: 0.9991972}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger4_R
+      parentName: IndexFinger3_R
+      position: {x: -0.024567012, y: 0, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Cup_R
       parentName: Wrist_R
       position: {x: -0.021330062, y: -0.015057259, z: 0.00025943134}
-      rotation: {x: -0.035451677, y: -0.02013544, z: -0.02367748, w: 0.998888}
-      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+      rotation: {x: -0.035451822, y: -0.020135438, z: -0.023677487, w: 0.99888796}
+      scale: {x: 1, y: 1, z: 1}
     - name: PinkyFinger1_R
       parentName: Cup_R
       position: {x: -0.07510563, y: -0.029770283, z: -0.015154619}
-      rotation: {x: 0.08009495, y: -0.061359055, z: 0.049535207, w: 0.99366295}
-      scale: {x: 0.9999997, y: 0.9999998, z: 0.9999998}
+      rotation: {x: 0.08009512, y: -0.061357133, z: 0.049534526, w: 0.99366313}
+      scale: {x: 1, y: 1, z: 1}
     - name: PinkyFinger2_R
       parentName: PinkyFinger1_R
       position: {x: -0.022675114, y: -1.0658141e-16, z: -5.684342e-16}
-      rotation: {x: 0.0020091974, y: -0.03823715, z: 0.00049767067, w: 0.99926656}
-      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000002}
+      rotation: {x: 0.0020091601, y: -0.038238768, z: 0.000499822, w: 0.9992665}
+      scale: {x: 1, y: 1, z: 1}
     - name: PinkyFinger3_R
       parentName: PinkyFinger2_R
       position: {x: -0.014082813, y: -5.3290704e-17, z: 0}
-      rotation: {x: 0.018594408, y: -0.02656985, z: -0.0055274684, w: 0.9994588}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      rotation: {x: 0.018594312, y: -0.026569853, z: -0.0055274433, w: 0.99945873}
+      scale: {x: 1, y: 1, z: 1}
     - name: PinkyFinger4_R
       parentName: PinkyFinger3_R
       position: {x: -0.02047265, y: -1.7763568e-17, z: -5.684342e-16}
@@ -1509,45 +1314,205 @@ ModelImporter:
     - name: RingFinger1_R
       parentName: Cup_R
       position: {x: -0.08134515, y: -0.010694743, z: -0.0042441767}
-      rotation: {x: 0.0885596, y: -0.042299908, z: 0.04329987, w: 0.99422985}
-      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999998}
+      rotation: {x: 0.088559695, y: -0.0422999, z: 0.04329987, w: 0.99422985}
+      scale: {x: 1, y: 1, z: 1}
     - name: RingFinger2_R
       parentName: RingFinger1_R
       position: {x: -0.02976126, y: 1.5987211e-16, z: 5.684342e-16}
-      rotation: {x: -0.0021333392, y: -0.038474597, z: -0.0012252933, w: 0.9992566}
-      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+      rotation: {x: -0.00213325, y: -0.038479622, z: -0.0012234956, w: 0.9992564}
+      scale: {x: 1, y: 1, z: 1}
     - name: RingFinger3_R
       parentName: RingFinger2_R
       position: {x: -0.022179894, y: 0, z: -2.842171e-16}
-      rotation: {x: 0.005280267, y: -0.032925468, z: -0.0034269704, w: 0.99943805}
-      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000002}
+      rotation: {x: 0.0052801752, y: -0.032925434, z: -0.0034269476, w: 0.999438}
+      scale: {x: 1, y: 1, z: 1}
     - name: RingFinger4_R
       parentName: RingFinger3_R
       position: {x: -0.029863436, y: -5.3290704e-17, z: 5.684342e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: ThumbFinger1_R
-      parentName: Wrist_R
-      position: {x: -0.036621295, y: 0.03208573, z: -0.01971327}
-      rotation: {x: -0.52205896, y: 0.15049966, z: -0.2929186, w: 0.7867675}
-      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
-    - name: ThumbFinger2_R
-      parentName: ThumbFinger1_R
-      position: {x: -0.04494248, y: 0, z: 1.0658141e-16}
-      rotation: {x: -0.003044575, y: -0.04040199, z: -0.0010918638, w: 0.99917835}
-      scale: {x: 1.0000004, y: 1.0000001, z: 0.99999994}
-    - name: ThumbFinger3_R
-      parentName: ThumbFinger2_R
-      position: {x: -0.024421215, y: -2.842171e-16, z: -7.105427e-17}
-      rotation: {x: -0.001752933, y: -0.042852025, z: -0.004733789, w: 0.9990687}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: ThumbFinger4_R
-      parentName: ThumbFinger3_R
-      position: {x: -0.031374093, y: -2.842171e-16, z: 0}
+    - name: Scapula_L
+      parentName: Chest_M
+      position: {x: -0.08835984, y: 0.001060862, z: 0.08045014}
+      rotation: {x: 0.7058044, y: -0.043917328, z: 0.7034644, w: -0.071059205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoulder_L
+      parentName: Scapula_L
+      position: {x: 0.11381149, y: 6.965317e-14, z: -5.968559e-15}
+      rotation: {x: -0.051705457, y: -0.001404585, z: -0.0752275, w: 0.995824}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoulderPart1_L
+      parentName: Shoulder_L
+      position: {x: 0.08958141, y: -2.4868996e-16, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoulderPart2_L
+      parentName: ShoulderPart1_L
+      position: {x: 0.08958141, y: -2.1316282e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elbow_L
+      parentName: ShoulderPart2_L
+      position: {x: 0.08958141, y: -3.1974422e-16, z: 5.684342e-16}
+      rotation: {x: 0, y: 0, z: -0.039498363, w: 0.99921966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ElbowPart1_L
+      parentName: Elbow_L
+      position: {x: 0.07844744, y: -1.0658141e-16, z: -8.5265126e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ElbowPart2_L
+      parentName: ElbowPart1_L
+      position: {x: 0.07844744, y: -1.0658141e-16, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wrist_L
+      parentName: ElbowPart2_L
+      position: {x: 0.07844744, y: -1.7763567e-16, z: -8.5265126e-16}
+      rotation: {x: 0.0510847, y: 0.021730071, z: 0.027212678, w: 0.998087}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MiddleFinger1_L
+      parentName: Wrist_L
+      position: {x: 0.11010317, y: 3.5527136e-17, z: 2.842171e-16}
+      rotation: {x: -0.0021530797, y: -0.09234659, z: -0.011502207, w: 0.9956582}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MiddleFinger2_L
+      parentName: MiddleFinger1_L
+      position: {x: 0.034438375, y: 0, z: 0}
+      rotation: {x: -0.00021393056, y: -0.037321374, z: 0.00036810213, w: 0.9993033}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MiddleFinger3_L
+      parentName: MiddleFinger2_L
+      position: {x: 0.02400288, y: -2.6645352e-17, z: 5.684342e-16}
+      rotation: {x: 0.00047233995, y: 0.0010741898, z: 0.0005142248, w: 0.99999917}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MiddleFinger4_L
+      parentName: MiddleFinger3_L
+      position: {x: 0.027723068, y: 8.881784e-18, z: -8.5265126e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger1_L
+      parentName: Wrist_L
+      position: {x: 0.036621295, y: -0.03208573, z: 0.01971327}
+      rotation: {x: -0.52206004, y: 0.15049793, z: -0.29291844, w: 0.7867672}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger2_L
+      parentName: ThumbFinger1_L
+      position: {x: 0.04494248, y: -5.684342e-16, z: -1.7763567e-16}
+      rotation: {x: -0.0030445443, y: -0.04039826, z: -0.0010907049, w: 0.9991784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger3_L
+      parentName: ThumbFinger2_L
+      position: {x: 0.024421215, y: 8.5265126e-16, z: 0}
+      rotation: {x: -0.0017529008, y: -0.04285204, z: -0.0047337916, w: 0.9990687}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbFinger4_L
+      parentName: ThumbFinger3_L
+      position: {x: 0.031374093, y: -2.842171e-16, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger1_L
+      parentName: Wrist_L
+      position: {x: 0.10893105, y: -0.024117103, z: 0.0015203778}
+      rotation: {x: -0.0019313397, y: -0.04881329, z: -0.037530154, w: 0.9981007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger2_L
+      parentName: IndexFinger1_L
+      position: {x: 0.029651638, y: -5.3290704e-17, z: 1.1368684e-15}
+      rotation: {x: -0.0010001573, y: -0.039698675, z: 0.0023847697, w: 0.9992084}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger3_L
+      parentName: IndexFinger2_L
+      position: {x: 0.021868173, y: 0, z: -1.4210854e-15}
+      rotation: {x: -0.016855711, y: -0.036342565, z: 0.0006364679, w: 0.999197}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IndexFinger4_L
+      parentName: IndexFinger3_L
+      position: {x: 0.024567012, y: -3.5527136e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cup_L
+      parentName: Wrist_L
+      position: {x: 0.021330062, y: 0.015057259, z: -0.00025943134}
+      rotation: {x: -0.035451822, y: -0.020135438, z: -0.023677487, w: 0.99888796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PinkyFinger1_L
+      parentName: Cup_L
+      position: {x: 0.07510563, y: 0.029770283, z: 0.015154619}
+      rotation: {x: 0.08009503, y: -0.061356783, z: 0.04953439, w: 0.99366325}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PinkyFinger2_L
+      parentName: PinkyFinger1_L
+      position: {x: 0.022675114, y: -1.0658141e-16, z: -8.5265126e-16}
+      rotation: {x: 0.0020092493, y: -0.038239714, z: 0.0004990536, w: 0.9992665}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PinkyFinger3_L
+      parentName: PinkyFinger2_L
+      position: {x: 0.014082813, y: -5.3290704e-17, z: 0}
+      rotation: {x: 0.018594312, y: -0.026569853, z: -0.0055274433, w: 0.99945873}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PinkyFinger4_L
+      parentName: PinkyFinger3_L
+      position: {x: 0.02047265, y: -1.7763568e-17, z: 2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RingFinger1_L
+      parentName: Cup_L
+      position: {x: 0.08134515, y: 0.010694743, z: 0.0042441767}
+      rotation: {x: 0.088559695, y: -0.0422999, z: 0.04329987, w: 0.99422985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RingFinger2_L
+      parentName: RingFinger1_L
+      position: {x: 0.02976126, y: -1.7763567e-16, z: -5.684342e-16}
+      rotation: {x: -0.0021333317, y: -0.03847689, z: -0.0012235862, w: 0.99925655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RingFinger3_L
+      parentName: RingFinger2_L
+      position: {x: 0.022179894, y: -1.0658141e-16, z: 1.1368684e-15}
+      rotation: {x: 0.0052801752, y: -0.032925434, z: -0.0034269476, w: 0.999438}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RingFinger4_L
+      parentName: RingFinger3_L
+      position: {x: 0.029863436, y: 5.3290704e-17, z: -1.1368684e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_L
+      parentName: Root_M
+      position: {x: 0.047620993, y: -0.0075557255, z: 0.09825479}
+      rotation: {x: 0.9993818, y: 0.031103002, z: 0.015596207, w: -0.0050437646}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HipPart1_L
+      parentName: Hip_L
+      position: {x: 0.12847884, y: -0.000000009400393, z: 1.9942624e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HipPart2_L
+      parentName: HipPart1_L
+      position: {x: 0.12847884, y: -0.000000009400393, z: 1.9942802e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Knee_L
+      parentName: HipPart2_L
+      position: {x: 0.12847884, y: -0.000000009400393, z: 1.9942802e-12}
+      rotation: {x: -5.7154415e-17, y: 2.3407813e-17, z: 0.09598265, w: 0.995383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle_L
+      parentName: Knee_L
+      position: {x: 0.45881483, y: 9.703349e-16, z: 1.1696919e-11}
+      rotation: {x: 0.015443356, y: -0.015681216, z: -0.036817677, w: 0.99907964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toes_L
+      parentName: Ankle_L
+      position: {x: 0.06847265, y: -0.13812052, z: 8.246718e-12}
+      rotation: {x: -0.016563416, y: -0.015070266, z: -0.67281246, w: 0.7394742}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ToesEnd_L
+      parentName: Toes_L
+      position: {x: 0.09201846, y: 1.7763568e-17, z: 5.9932154e-10}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Geometry
-      parentName: ji_rig(Clone)
+      parentName: ji_rig_7_7(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
