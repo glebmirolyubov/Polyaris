@@ -12020,6 +12020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ji Pilot
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1114580384400129685, guid: 0d75ff74cb1be4ccb97fa9218b5bc8d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.11381161
