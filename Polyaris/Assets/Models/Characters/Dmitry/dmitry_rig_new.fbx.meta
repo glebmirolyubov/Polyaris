@@ -128,7 +128,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: HipPart1_L
+    - boneName: Hip_L
       humanName: LeftUpperLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -136,7 +136,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: HipPart1_R
+    - boneName: Hip_R
       humanName: RightUpperLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -256,7 +256,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: ElbowPart2_L
+    - boneName: Wrist_L
       humanName: LeftHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -264,7 +264,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: ElbowPart2_R
+    - boneName: Wrist_R
       humanName: RightHand
       limit:
         min: {x: 0, y: 0, z: 0}
