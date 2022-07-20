@@ -9,8 +9,10 @@ public class InjuredPilotManager : MonoBehaviour
     public Transform player;
     public Collider capsuleCollider;
     public Collider boxCollider;
+    public Opsive.Shared.Input.UnityInput inputScript;
+    public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotionHandler locomotionScript;
 
-    Vector3 pilotFinalPosition = new Vector3(0.5f, 0f, 0f);
+    Vector3 pilotFinalPosition = new Vector3(-0.5f, 0f, 0f);
 
     private bool canPickUpPilot = false;
 
@@ -32,6 +34,8 @@ public class InjuredPilotManager : MonoBehaviour
         pickUpPilotText.SetActive(false);
         capsuleCollider.enabled = false;
         boxCollider.enabled = false;
+        inputScript.enabled = false;
+        locomotionScript.enabled = false;
 
         StartCoroutine("PilotParentingDelay");
     }
@@ -46,7 +50,9 @@ public class InjuredPilotManager : MonoBehaviour
     void ParentPilotToPlayer()
     {
         transform.SetParent(player);
-        player.transform.localPosition = pilotFinalPosition;
+        inputScript.enabled = true;
+        locomotionScript.enabled = true;
+        transform.localPosition = pilotFinalPosition;
     }
 
     private void OnTriggerEnter(Collider other)
