@@ -12,7 +12,7 @@ public class InjuredPilotManager : MonoBehaviour
     public Opsive.Shared.Input.UnityInput inputScript;
     public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotionHandler locomotionScript;
 
-    Vector3 pilotFinalPosition = new Vector3(0.5f, 0f, 0f);
+    Vector3 pilotFinalPosition = new Vector3(-0.5f, 0f, 0f);
 
     private bool canPickUpPilot = false;
 
@@ -52,7 +52,7 @@ public class InjuredPilotManager : MonoBehaviour
         transform.SetParent(player);
         inputScript.enabled = true;
         locomotionScript.enabled = true;
-        player.transform.localPosition = pilotFinalPosition;
+        transform.localPosition = pilotFinalPosition;
     }
 
     private void OnTriggerEnter(Collider other)
