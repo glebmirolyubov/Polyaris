@@ -6,7 +6,9 @@ public class InjuredPilotManager : MonoBehaviour
 {
     public GameObject pickUpPilotText;
     public Animator playerAnimator;
+    public Animator pilotAnimator;
     public Transform player;
+    public Transform playerPickupRelocationPosition;
     public Collider capsuleCollider;
     public Collider boxCollider;
     public Opsive.Shared.Input.UnityInput inputScript;
@@ -31,7 +33,9 @@ public class InjuredPilotManager : MonoBehaviour
     {
         playerAnimator.SetTrigger("Pick Up Pilot");
         playerAnimator.SetBool("Injured State", true);
+        pilotAnimator.SetTrigger("Stand Up");
         pickUpPilotText.SetActive(false);
+        player.position = playerPickupRelocationPosition.position;
         capsuleCollider.enabled = false;
         boxCollider.enabled = false;
         inputScript.enabled = false;
@@ -52,7 +56,7 @@ public class InjuredPilotManager : MonoBehaviour
         transform.SetParent(player);
         inputScript.enabled = true;
         locomotionScript.enabled = true;
-        transform.localPosition = pilotFinalPosition;
+        //transform.localPosition = pilotFinalPosition;
     }
 
     private void OnTriggerEnter(Collider other)

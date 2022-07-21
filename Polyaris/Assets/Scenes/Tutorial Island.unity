@@ -11164,7 +11164,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpPilotText: {fileID: 1805698570}
   playerAnimator: {fileID: 4430869007918742145}
+  pilotAnimator: {fileID: 657463678}
   player: {fileID: 7754555582571700475}
+  playerPickupRelocationPosition: {fileID: 1460769988}
   capsuleCollider: {fileID: 364143990}
   boxCollider: {fileID: 364143991}
   inputScript: {fileID: 7754555582571700486}
@@ -20376,6 +20378,11 @@ MeshFilter:
 --- !u!4 &657463677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db5044af5ca518e41a665176394e784a, type: 3}
+  m_PrefabInstance: {fileID: 287799138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &657463678 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: db5044af5ca518e41a665176394e784a, type: 3}
   m_PrefabInstance: {fileID: 287799138}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &658657814
@@ -42853,6 +42860,37 @@ MonoBehaviour:
   size: 2
   amplitude: 0.5
   overrideWaterMaterial: {fileID: 0}
+--- !u!1 &1460769987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460769988}
+  m_Layer: 0
+  m_Name: Pilot Pick Up Relocation Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460769988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460769987}
+  m_LocalRotation: {x: 0, y: -0.65038013, z: 0, w: -0.7596089}
+  m_LocalPosition: {x: 118.735, y: 0.223, z: 90.316}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: -129.359, z: 0}
 --- !u!1001 &1465100690
 PrefabInstance:
   m_ObjectHideFlags: 0
