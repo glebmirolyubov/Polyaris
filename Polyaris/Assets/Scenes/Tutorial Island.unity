@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1449116164}
-  m_IndirectSpecularColor: {r: 0.02908697, g: 0.02989779, b: 0.029896403, a: 1}
+  m_IndirectSpecularColor: {r: 0.029087221, g: 0.029897578, b: 0.029896645, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11171,6 +11171,7 @@ MonoBehaviour:
   boxCollider: {fileID: 364143991}
   inputScript: {fileID: 7754555582571700486}
   locomotionScript: {fileID: 7754555582571700485}
+  locomotionMainScript: {fileID: 7754555582571700476}
 --- !u!4 &364762571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4206683368507738, guid: 190104e9bd5f8014eaf9a7f5f6f7a173, type: 3}
@@ -42883,14 +42884,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460769987}
-  m_LocalRotation: {x: 0, y: -0.65038013, z: 0, w: -0.7596089}
-  m_LocalPosition: {x: 118.735, y: 0.223, z: 90.316}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.611, y: -0.088, z: 1.125}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: -129.359, z: 0}
+  m_Father: {fileID: 7754555582571700475}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1001 &1465100690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82414,6 +82415,7 @@ Transform:
   - {fileID: 407730996}
   - {fileID: 592791025}
   - {fileID: 767404350}
+  - {fileID: 1460769988}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -129.359, z: 0}
