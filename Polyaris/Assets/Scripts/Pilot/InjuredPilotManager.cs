@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class InjuredPilotManager : MonoBehaviour
 {
-    public GameObject pickUpPilotText;
     public Animator playerAnimator;
     public Animator pilotAnimator;
     public Transform player;
-    public Transform playerPickupRelocationPosition;
+    public Transform pilotRelocationPoint;
     public Collider capsuleCollider;
     public Collider boxCollider;
-    public Opsive.Shared.Input.UnityInput inputScript;
-    public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotionHandler locomotionScript;
-    public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotion locomotionMainScript;
-
-    Vector3 pilotFinalPosition = new Vector3(-0.5f, 0f, 0f);
-
-    private Vector3 playerOriginPos;
 
     private bool canPickUpPilot = false;
 
@@ -32,58 +24,39 @@ public class InjuredPilotManager : MonoBehaviour
         }
     }
 
-    public IEnumerator moveObject()
-    {
-        float totalMovementTime = 3f; //the amount of time you want the movement to take
-        float currentMovementTime = 0f;//The amount of time that has passed
-        while (Vector3.Distance(player.transform.position, playerPickupRelocationPosition.position) > 0)
-        {
-            Debug.Log(Vector3.Distance(player.transform.position, playerPickupRelocationPosition.position));
-            currentMovementTime += Time.deltaTime;
-            player.transform.localPosition = Vector3.Lerp(playerOriginPos, playerPickupRelocationPosition.position, currentMovementTime / totalMovementTime);
-            yield return null;
-        }
-
-        StartCoroutine("PilotParentingDelay");
-
-        playerAnimator.SetTrigger("Pick Up Pilot");
-        playerAnimator.SetBool("Injured State", true);
-        pilotAnimator.SetTrigger("Stand Up");
-        transform.SetParent(player);
-    }
-
     void PickUpPilot()
     {
-        playerOriginPos = player.position;
-        pickUpPilotText.SetActive(false);
         capsuleCollider.enabled = false;
-        boxCollider.enabled = false;
-        inputScript.enabled = false;
-        locomotionScript.enabled = false;
 
-        StartCoroutine("moveObject");
+        StartCoroutine("PilotParentingDelay");
     }
 
     IEnumerator PilotParentingDelay()
     {
-        yield return new WaitForSeconds(4f);
 
-        ParentPilotToPlayer();
+        yield return new WaitForSeconds(1f);
+
+        playerAnimator.SetTrigger("Pick Up Pilot");
+        playerAnimator.SetBool("Injured State", true);
+
+        yield return new WaitForSeconds(5f);
+
+        transform.SetParent(pilotRelocationPoint);
+
+        yield return new WaitForSeconds(2f);
+
+        transform.localPosition = new Vector3(0f, 0f, 0f);
+        transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+
+        //pilotAnimator.SetTrigger("Stand Up");
+
     }
 
-    void ParentPilotToPlayer()
-    {
-        inputScript.enabled = true;
-        locomotionScript.enabled = true;
-        locomotionMainScript.enabled = true;
-        //transform.localPosition = pilotFinalPosition;
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !canPickUpPilot)
         {
-            pickUpPilotText.SetActive(true);
             canPickUpPilot = true;
         }
     }
@@ -92,7 +65,6 @@ public class InjuredPilotManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            pickUpPilotText.SetActive(false);
             canPickUpPilot = false;
         }
     }
