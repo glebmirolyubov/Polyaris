@@ -468,8 +468,8 @@ MonoBehaviour:
     ctime6: 52814
     ctime7: 59560
     atime0: 0
-    atime1: 65535
-    atime2: 22937
+    atime1: 964
+    atime2: 65535
     atime3: 55705
     atime4: 55705
     atime5: 55705
@@ -477,7 +477,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_NumColorKeys: 8
-    m_NumAlphaKeys: 2
+    m_NumAlphaKeys: 3
   fogFlareColor:
     serializedVersion: 2
     key0: {r: 0.2943663, g: 0.831844, b: 0.990566, a: 1}
@@ -510,10 +510,10 @@ MonoBehaviour:
   skyShader: {fileID: 2100000, guid: 6eb59c244ec58774ab61d691d4cf6a19, type: 2}
   cloudShader: {fileID: 2100000, guid: bfd828e6ce201e9478ecded123a8d908, type: 2}
   fogShader: {fileID: 2100000, guid: 8521660c56b3a0642a23d3f0ebacac58, type: 2}
-  gradientExponent: 0.204
+  gradientExponent: 0.226
   atmosphereVariation: {x: 0.84696186, y: 0.84753823}
   atmosphereBias: 0.341
-  sunSize: 0.87
+  sunSize: 2.7
   sunColor: {r: 10.432951, g: 10.432951, b: 10.432951, a: 0}
   sunFalloff: 25.5
   sunFlareColor: {r: 0.25792095, g: 0.3264449, b: 0.33962262, a: 0}

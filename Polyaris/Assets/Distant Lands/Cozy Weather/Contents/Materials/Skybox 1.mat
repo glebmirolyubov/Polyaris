@@ -150,7 +150,7 @@ Material:
     - _PatchworkHeight: 0.84753823
     - _PatchworkPower: 1
     - _PatchworkVariation: 0.84696186
-    - _Power: 0.204
+    - _Power: 0.226
     - _RainbowIntensity: 0
     - _RainbowSize: 78.7
     - _RainbowWidth: 11
@@ -158,7 +158,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunFlareFalloff: 25.5
-    - _SunSize: 0.87
+    - _SunSize: 2.7
     - _TextureAmount: 1
     - _UVSec: 0
     - _WindSpeed: 3

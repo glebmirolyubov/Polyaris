@@ -147,9 +147,9 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
-    - _AltoCloudColor: {r: 0.18105812, g: 0.23829189, b: 0.24315606, a: 1}
+    - _AltoCloudColor: {r: 0.3367046, g: 0.4431393, b: 0.45218498, a: 1}
     - _AltocumulusWindSpeed: {r: 1, g: -2, b: 0, a: 0}
-    - _CloudColor: {r: 0.004785605, g: 0.006666807, b: 0.007434004, a: 1}
+    - _CloudColor: {r: 0.008899546, g: 0.012397923, b: 0.01382464, a: 1}
     - _CloudCoverageMovement: {r: 5, g: 20, b: 0, a: 0}
     - _CloudFlareColor: {r: 2.7294118, g: 2.3843138, b: 1.882353, a: 1}
     - _CloudHighlightColor: {r: 0, g: 0, b: 0, a: 0}
@@ -164,7 +164,7 @@ Material:
     - _MainCloudWindDir: {r: 0.1, g: 0.2, b: 0, a: 0}
     - _MoonColor: {r: 0.11000357, g: 0.2264151, b: 0.22527522, a: 0}
     - _SecondLayer: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 0}
-    - _StormDirection: {r: 0.8362545, g: -0, b: 0.5483415, a: 0}
+    - _StormDirection: {r: 0.7113464, g: -0, b: -0.70284164, a: 0}
     - _SunDirection: {r: 0.399082, g: 0.91643727, b: 0.029600084, a: 0}
     - _SunDirection1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector0: {r: 100, g: 100, b: 0, a: 0}

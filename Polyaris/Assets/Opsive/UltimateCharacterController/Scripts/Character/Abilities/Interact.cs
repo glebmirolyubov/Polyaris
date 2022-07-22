@@ -241,7 +241,6 @@ using Opsive.UltimateCharacterController.Networking;
                 return;
             }
 #endif
-
             m_Interactable.Interact(m_GameObject);
             m_HasInteracted = true;
 

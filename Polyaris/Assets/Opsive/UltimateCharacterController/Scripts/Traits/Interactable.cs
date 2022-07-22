@@ -85,6 +85,7 @@ namespace Opsive.UltimateCharacterController.Traits
         /// <param name="character">The character that wants to interactact with the target.</param>
         public virtual void Interact(GameObject character)
         {
+
 #if ULTIMATE_CHARACTER_CONTROLLER_MULTIPLAYER
             var characterNetworkInfo = character.GetCachedComponent<INetworkInfo>();
             if (characterNetworkInfo != null && characterNetworkInfo.IsLocalPlayer()) {
@@ -96,7 +97,6 @@ namespace Opsive.UltimateCharacterController.Traits
                 m_NetworkInteractable.Interact(character);
             }
 #endif
-
             for (int i = 0; i < m_InteractableTargets.Length; ++i) {
                 m_InteractableTargets[i].Interact(character);
             }
