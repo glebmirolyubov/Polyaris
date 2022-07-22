@@ -17,6 +17,8 @@ public class InjuredPilotManager : MonoBehaviour
 
     Vector3 pilotFinalPosition = new Vector3(-0.5f, 0f, 0f);
 
+    private Vector3 playerOriginPos;
+
     private bool canPickUpPilot = false;
 
     private void Update()
@@ -30,23 +32,36 @@ public class InjuredPilotManager : MonoBehaviour
         }
     }
 
-    void PickUpPilot()
+    public IEnumerator moveObject()
     {
+        float totalMovementTime = 3f; //the amount of time you want the movement to take
+        float currentMovementTime = 0f;//The amount of time that has passed
+        while (Vector3.Distance(player.transform.position, playerPickupRelocationPosition.position) > 0)
+        {
+            Debug.Log(Vector3.Distance(player.transform.position, playerPickupRelocationPosition.position));
+            currentMovementTime += Time.deltaTime;
+            player.transform.localPosition = Vector3.Lerp(playerOriginPos, playerPickupRelocationPosition.position, currentMovementTime / totalMovementTime);
+            yield return null;
+        }
+
+        StartCoroutine("PilotParentingDelay");
+
         playerAnimator.SetTrigger("Pick Up Pilot");
         playerAnimator.SetBool("Injured State", true);
         pilotAnimator.SetTrigger("Stand Up");
-        pickUpPilotText.SetActive(false);
-        //locomotionMainScript.enabled = false;
         transform.SetParent(player);
-        transform.position = playerPickupRelocationPosition.position;
-        transform.localRotation = Quaternion.Euler(0f, -180f, 0f);
+    }
+
+    void PickUpPilot()
+    {
+        playerOriginPos = player.position;
+        pickUpPilotText.SetActive(false);
         capsuleCollider.enabled = false;
         boxCollider.enabled = false;
         inputScript.enabled = false;
         locomotionScript.enabled = false;
-        //locomotionMainScript.enabled = true;
 
-        StartCoroutine("PilotParentingDelay");
+        StartCoroutine("moveObject");
     }
 
     IEnumerator PilotParentingDelay()

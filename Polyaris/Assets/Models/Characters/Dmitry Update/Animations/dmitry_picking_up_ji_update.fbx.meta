@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Take 001
+    second: Pick Up
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -21,26 +21,27 @@ ModelImporter:
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
-      in configuration does not match rotation in animation file:\n\t'dmitry_rig:HipPart2_L'
-      : rotation error = 1.982163 deg\n"
+      in configuration does not match rotation in animation file:\n\t'dmitry_rig:HipPart1_L'
+      : rotation error = 1.982173 deg\n\t'dmitry_rig:HipPart2_L' : rotation error
+      = 1.982163 deg\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'dmitry_rig:Hip_R' is inbetween humanoid
+      to improve retargeting quality.\n\t'dmitry_rig:HipPart1_R' is inbetween humanoid
       transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:HipPart2_R'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Spine1_M'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Spine1Part2_M'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:NeckPart1_M'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Scapula_R'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ShoulderPart1_R'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ShoulderPart2_R'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ElbowPart1_R'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Wrist_R'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Scapula_L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ElbowPart2_R'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ShoulderPart1_L'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ShoulderPart2_L'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ElbowPart1_L'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Wrist_L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:ElbowPart2_L'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Cup_L'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:Hip_L'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:HipPart1_L'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'dmitry_rig:HipPart2_L'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
@@ -54,7 +55,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Pick Up
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
