@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Heavy Snow
   m_EditorClassIdentifier: 
   weatherTime: {x: 68.52273, y: 128.52269}
-  likelihood: 2
+  likelihood: 0
   forecastNext:
   - {fileID: 11400000, guid: 134d60bbf3db4074599790ce6df65c88, type: 2}
   - {fileID: 11400000, guid: 4d539afa69e41c24592baf151ffc2e69, type: 2}
@@ -97,22 +97,22 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   cloudSettings:
-    cloudCoverage: {x: 2, y: 2}
-    cumulusCoverage: 1
+    cloudCoverage: {x: 0.67, y: 0.73}
+    cumulusCoverage: 0
     altocumulusCoverage: 0
     chemtrailCoverage: 0
     cirrostratusCoverage: 0
     cirrusCoverage: 0
     nimbusCoverage: 0
-    nimbusVariation: 0.9
-    nimbusHeightEffect: 1
-    borderHeight: 1
-    borderVariation: 0.9
-    borderEffect: 1
-  fogDensity: 2
+    nimbusVariation: 0.269
+    nimbusHeightEffect: 0.269
+    borderHeight: 0.266
+    borderVariation: 0.133
+    borderEffect: -0.643
+  fogDensity: 0.67
   windSpeed: 0.5
-  windAmount: 1
-  snowAccumulationSpeed: 0.027
+  windAmount: 0.474
+  snowAccumulationSpeed: 0.011
   wetnessSpeed: 0
   particleFX: {fileID: 7714221331987295520, guid: 038fae860e0461b4a933698b8ecf4681, type: 3}
   useThunder: 0
@@ -124,5 +124,5 @@ MonoBehaviour:
     saturation: -0.254
     value: -0.016
     colorFilter: {r: 0.43494126, g: 0.48971534, b: 0.509434, a: 1}
-  sunFilter: {r: 0, g: 0, b: 0, a: 0}
-  cloudFilter: {r: 1, g: 1, b: 1, a: 1}
+  sunFilter: {r: 0, g: 0, b: 0, a: 0.5254902}
+  cloudFilter: {r: 1, g: 1, b: 1, a: 0.36078432}

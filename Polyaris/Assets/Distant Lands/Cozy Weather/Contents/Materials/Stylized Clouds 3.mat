@@ -78,8 +78,8 @@ Material:
     - _AltocumulusMultiplier: 0
     - _AltocumulusScale: 3
     - _BorderEffect: 1
-    - _BorderHeight: 0.5
-    - _BorderVariation: 0.94
+    - _BorderHeight: 1
+    - _BorderVariation: 0.9
     - _BumpScale: 1
     - _ChemtrailsMoveSpeed: 0.5
     - _ChemtrailsMultiplier: 0
@@ -92,7 +92,7 @@ Material:
     - _CloudCoverageScale: 400
     - _CloudFlareFalloff: 10.8
     - _CloudHeight: 0
-    - _CumulusCoverageMultiplier: 0.703
+    - _CumulusCoverageMultiplier: 1
     - _Cutoff: 0.5
     - _DetailAmount: 15
     - _DetailNormalMapScale: 1
@@ -106,9 +106,9 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _MainCloudScale: 15
-    - _MaxCloudCover: 0.3
+    - _MaxCloudCover: 2
     - _Metallic: 0
-    - _MinCloudCover: 0.3
+    - _MinCloudCover: 2
     - _Mode: 0
     - _MoonFlareFalloff: 43.5
     - _NimbusHeight: 1
@@ -138,12 +138,12 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
-    - _AltoCloudColor: {r: 3.185228, g: 3.185228, b: 3.185228, a: 1}
+    - _AltoCloudColor: {r: 4.3494124, g: 4.7577853, b: 4.754673, a: 1}
     - _AltocumulusWindSpeed: {r: 1, g: -2, b: 0, a: 0}
-    - _CloudColor: {r: 1.0806726, g: 1.0806726, b: 1.0806726, a: 1}
+    - _CloudColor: {r: 0.21237546, g: 0.22241035, b: 0.2283319, a: 1}
     - _CloudCoverageMovement: {r: 5, g: 20, b: 0, a: 0}
     - _CloudFlareColor: {r: 2.7294118, g: 2.3843138, b: 1.882353, a: 1}
-    - _CloudHighlightColor: {r: 8.403578, g: 8.403578, b: 8.403578, a: 0}
+    - _CloudHighlightColor: {r: 0, g: 0, b: 0, a: 0}
     - _CloudScale: {r: 0.01, g: 0.05, b: 0.01, a: 0}
     - _CloudWind1: {r: 0.6, g: -0.8, b: 0, a: 0}
     - _CloudWind2: {r: 0.1, g: 0.2, b: 0, a: 0}
@@ -152,7 +152,7 @@ Material:
     - _DetailWind: {r: 0.3, g: 0.8, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MoonColor: {r: 0.2025187, g: 0.31566927, b: 0.38679248, a: 0}
-    - _StormDirection: {r: 0.8576277, g: -0, b: 0.5142711, a: 0}
+    - _StormDirection: {r: -0.8431149, g: -0, b: -0.53773344, a: 0}
     - _SunDirection: {r: 0.37849554, g: 0.9156084, b: 0.1356557, a: 0}
     - _SunDirection1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector0: {r: 100, g: 100, b: 0, a: 0}

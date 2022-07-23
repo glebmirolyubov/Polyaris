@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Desktop Clouds Reference
   m_Shader: {fileID: 4800000, guid: 1a6791d1617850b49b130b523f5ebf5c, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -91,25 +92,27 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _ACScale: 0.5
+    - _AlphaCutoff: 0.5
     - _AltoCumulusMultiplier: 1
     - _AltoCumulusScale: 0.5
     - _AltocumulusMultiplier: 0
-    - _AltocumulusScale: 1
+    - _AltocumulusScale: 0.806
     - _BorderEffect: 1
     - _BorderHeight: 0.5
     - _BorderSmoothness: 0.928
     - _BorderVariation: 0.9
     - _BumpScale: 1
-    - _ChemtrailsMoveSpeed: 0.503
+    - _ChemtrailsMoveSpeed: 0.474
     - _ChemtrailsMultiplier: 0
     - _ChemtrialMoveSpeed: 1
     - _ChemtrialsMoveSpeed: 1
-    - _CirrostratusMoveSpeed: 0.5
+    - _CirrostratusMoveSpeed: 0.607
     - _CirrostratusMoveSpeed1: 0
     - _CirrostratusMultiplier: 0
-    - _CirrusMoveSpeed: 0.503
+    - _CirrusMoveSpeed: 0.582
     - _CirrusMultiplier: 0
     - _ClippingThreshold: 0.5
     - _CloudCohesion: 0.778
@@ -130,7 +133,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAmount: 30
     - _DetailNormalMapScale: 1
-    - _DetailScale: 2.3
+    - _DetailScale: 1.74
     - _DstBlend: 0
     - _Flatness: 20
     - _Flatness1: 1.9
@@ -141,7 +144,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MainCloudScale: 20
+    - _MainCloudScale: 18.26
     - _MaxCloudCover: 0.3
     - _Metallic: 0
     - _MinCloudCover: 0.3
@@ -181,7 +184,7 @@ Material:
     - _Translucency: 3.7
     - _UVSec: 0
     - _WindNoiseSize: 0.1
-    - _WindSpeed: 3
+    - _WindSpeed: 3.67
     - _WindSpeed1: 0
     - _WindStrength: 1
     - _ZWrite: 1
@@ -222,3 +225,4 @@ Material:
     - _SunDirection: {r: 0.6777035, g: 0.46998298, b: 0.56553906, a: 0}
     - _SunDirection1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector0: {r: 0.12, g: 1.5, b: 0, a: 0}
+  m_BuildTextureStacks: []
