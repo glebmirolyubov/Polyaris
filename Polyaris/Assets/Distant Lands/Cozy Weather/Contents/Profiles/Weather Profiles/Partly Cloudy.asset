@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Partly Cloudy
   m_EditorClassIdentifier: 
   weatherTime: {x: 30, y: 90}
-  likelihood: 0.429
+  likelihood: 1
   forecastNext:
   - {fileID: 11400000, guid: 48908a08bbd076e4182bc3ca961b9c34, type: 2}
   - {fileID: 11400000, guid: df6d6974e6130cf4ba80f13cf41ae5f4, type: 2}

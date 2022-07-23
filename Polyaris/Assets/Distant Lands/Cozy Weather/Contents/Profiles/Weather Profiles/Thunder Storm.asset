@@ -113,8 +113,7 @@ MonoBehaviour:
   windAmount: 1
   snowAccumulationSpeed: 0
   wetnessSpeed: 0.03
-  particleFX: {fileID: 5674173761234049903, guid: f1e8d285629997d49aeb3ef1818180e5,
-    type: 3}
+  particleFX: {fileID: 5674173761234049903, guid: f1e8d285629997d49aeb3ef1818180e5, type: 3}
   useThunder: 1
   thunderTime: {x: 5, y: 10}
   useVFX: 1

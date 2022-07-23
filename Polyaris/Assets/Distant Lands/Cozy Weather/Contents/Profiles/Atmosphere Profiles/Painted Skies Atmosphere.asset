@@ -518,7 +518,7 @@ MonoBehaviour:
   sunFalloff: 43.7
   sunFlareColor: {r: 0.25792095, g: 0.3264449, b: 0.33962262, a: 0}
   moonFalloff: 24.4
-  moonFlareColor: {r: 0.007008724, g: 0.033018872, b: 0.025921568, a: 1}
+  moonFlareColor: {r: 0.008822088, g: 0.030660376, b: 0.02702066, a: 0}
   galaxy1Color: {r: 0, g: 0.5019608, b: 1.0039216, a: 1}
   galaxy2Color: {r: 0.11764706, g: 0.45490196, b: 0.078431375, a: 0}
   galaxy3Color: {r: 0.16470589, g: 0.078431375, b: 0.45490196, a: 0}

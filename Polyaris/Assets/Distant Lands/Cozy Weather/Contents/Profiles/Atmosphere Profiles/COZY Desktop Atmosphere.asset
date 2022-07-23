@@ -510,10 +510,10 @@ MonoBehaviour:
   skyShader: {fileID: 2100000, guid: 6eb59c244ec58774ab61d691d4cf6a19, type: 2}
   cloudShader: {fileID: 2100000, guid: bfd828e6ce201e9478ecded123a8d908, type: 2}
   fogShader: {fileID: 2100000, guid: 8521660c56b3a0642a23d3f0ebacac58, type: 2}
-  gradientExponent: 0.226
+  gradientExponent: 0.154
   atmosphereVariation: {x: 0.84696186, y: 0.84753823}
-  atmosphereBias: 0.341
-  sunSize: 2.7
+  atmosphereBias: 0.246
+  sunSize: 2.8
   sunColor: {r: 10.432951, g: 10.432951, b: 10.432951, a: 0}
   sunFalloff: 25.5
   sunFlareColor: {r: 0.25792095, g: 0.3264449, b: 0.33962262, a: 0}
@@ -525,17 +525,17 @@ MonoBehaviour:
   lightScatteringColor: {r: 0.28487295, g: 1.6986868, b: 2.0152123, a: 0}
   rainbowPosition: 78.7
   rainbowWidth: 11
-  fogStart1: 2
+  fogStart1: 2.04
   fogStart2: 5
-  fogStart3: 10
+  fogStart3: 11.97
   fogStart4: 30
-  fogHeight: 0.324
+  fogHeight: 0.186
   fogLightFlareIntensity: 1
   fogLightFlareFalloff: 21
   cloudMoonColor: {r: 0.11000357, g: 0.2264151, b: 0.22527522, a: 0}
   cloudSunHighlightFalloff: 19.31
   cloudMoonHighlightFalloff: 22.9
-  cloudWindSpeed: 3
+  cloudWindSpeed: 2.02
   clippingThreshold: 0.5
   cloudMainScale: 20
   cloudDetailScale: 2.3

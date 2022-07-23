@@ -42,6 +42,7 @@ MonoBehaviour:
   particleFX: {fileID: 0}
   useThunder: 0
   thunderTime: {x: 7, y: 13}
+  useVFX: 0
   soundFX: {fileID: 0}
   FXVolume: 1
   weatherFilter:

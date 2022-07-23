@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc9e8ccf7e1f314da24a604c1a11094, type: 3}
   m_Name: Receeding Storm
   m_EditorClassIdentifier: 
-  weatherTime: {x: 30, y: 40}
-  likelihood: 2
+  weatherTime: {x: 28.765602, y: 38.765606}
+  likelihood: 1
   forecastNext:
   - {fileID: 11400000, guid: df6d6974e6130cf4ba80f13cf41ae5f4, type: 2}
   - {fileID: 11400000, guid: ae94c1a397a01e442a11e8b23ebb1cef, type: 2}
