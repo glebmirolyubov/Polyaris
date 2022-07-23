@@ -42,11 +42,12 @@ public class InjuredPilotManager : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         transform.SetParent(pilotRelocationPoint);
+        transform.localPosition = new Vector3(0f, 0f, 0f);
+        transform.localEulerAngles = new Vector3(0f, 0f, 0f);
 
         yield return new WaitForSeconds(2f);
 
-        transform.localPosition = new Vector3(0f, 0f, 0f);
-        transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+
 
         //pilotAnimator.SetTrigger("Stand Up");
 
