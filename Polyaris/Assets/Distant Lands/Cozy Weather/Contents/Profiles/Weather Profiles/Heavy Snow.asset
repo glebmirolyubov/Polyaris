@@ -118,7 +118,7 @@ MonoBehaviour:
   useThunder: 0
   thunderTime: {x: 7, y: 13}
   useVFX: 1
-  soundFX: {fileID: 8300000, guid: 3389973ba94f48b47abc073e260c4953, type: 3}
+  soundFX: {fileID: 0}
   FXVolume: 1
   weatherFilter:
     saturation: -0.254
