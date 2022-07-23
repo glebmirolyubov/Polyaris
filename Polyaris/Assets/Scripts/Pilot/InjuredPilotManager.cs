@@ -45,9 +45,9 @@ public class InjuredPilotManager : MonoBehaviour
         transform.localPosition = new Vector3(0f, 0f, 0f);
         transform.localEulerAngles = new Vector3(0f, 0f, 0f);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
-
+        canPickUpPilot = false;
 
         //pilotAnimator.SetTrigger("Stand Up");
 
