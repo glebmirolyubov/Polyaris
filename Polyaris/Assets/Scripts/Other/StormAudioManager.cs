@@ -43,7 +43,7 @@ public class StormAudioManager : MonoBehaviour
     {
         while (s.volume < 1)
         {
-            s.volume += 0.03f;
+            s.volume += 0.003f;
             yield return null;
         }
     }
@@ -52,7 +52,7 @@ public class StormAudioManager : MonoBehaviour
     {
         while (s.volume > 0.2)
         {
-            s.volume -= 0.03f;
+            s.volume -= 0.003f;
             yield return null;
         }
     }
