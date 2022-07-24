@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Opsive.UltimateCharacterController.Character;
+using Opsive.UltimateCharacterController.Character.Abilities;
 
 public class InjuredPilotManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class InjuredPilotManager : MonoBehaviour
     public Transform pilotRelocationPoint;
     public Collider capsuleCollider;
     public Collider boxCollider;
+    public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotion locomotionScript;
 
     private bool canPickUpPilot = false;
 
@@ -26,6 +29,9 @@ public class InjuredPilotManager : MonoBehaviour
 
     void PickUpPilot()
     {
+        locomotionScript.GetAbility<Jump>().Enabled = false;
+        locomotionScript.GetAbility<SpeedChange>().Enabled = false;
+
         capsuleCollider.enabled = false;
 
         StartCoroutine("PilotParentingDelay");
@@ -52,8 +58,6 @@ public class InjuredPilotManager : MonoBehaviour
         //pilotAnimator.SetTrigger("Stand Up");
 
     }
-
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !canPickUpPilot)

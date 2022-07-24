@@ -17298,7 +17298,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329376144}
-  m_LocalRotation: {x: -0.0055232914, y: 0.98965526, z: 0.13775936, w: 0.039679017}
+  m_LocalRotation: {x: 0.0054080742, y: 0.98972106, z: 0.13750555, w: -0.03892559}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18178,6 +18178,7 @@ MonoBehaviour:
   pilotRelocationPoint: {fileID: 0}
   capsuleCollider: {fileID: 364143990}
   boxCollider: {fileID: 364143991}
+  locomotionScript: {fileID: 0}
 --- !u!4 &364762571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4206683368507738, guid: 190104e9bd5f8014eaf9a7f5f6f7a173, type: 3}
@@ -27638,6 +27639,7 @@ MonoBehaviour:
   pilotRelocationPoint: {fileID: 818877051}
   capsuleCollider: {fileID: 657463684}
   boxCollider: {fileID: 657463682}
+  locomotionScript: {fileID: 7754555582571700476}
 --- !u!136 &657463684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30931,7 +30933,7 @@ MonoBehaviour:
   audioModule: {fileID: 752583828}
   triggerManagerModule: {fileID: 752583827}
   lightningManagerModule: {fileID: 752583826}
-  m_SnowAmount: 0.10995558
+  m_SnowAmount: 0.03127577
   m_SnowMeltSpeed: 0.35
   m_Wetness: 0
   m_DryingSpeed: 0.5
@@ -34972,7 +34974,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898773204}
-  m_LocalRotation: {x: 0.22600499, y: -0.37889233, z: -0.18527089, w: -0.87808716}
+  m_LocalRotation: {x: 0.13794865, y: -0.6859722, z: -0.25762832, w: -0.66636324}
   m_LocalPosition: {x: -193.2, y: -7.6, z: 803.3}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
