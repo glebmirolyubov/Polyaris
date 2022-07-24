@@ -6,13 +6,22 @@ public class StormAudioManager : MonoBehaviour
 {
     public AudioSource[] soundsToControl;
 
+    public GameObject audioReverbZone;
+
+    private void Awake()
+    {
+        audioReverbZone.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            audioReverbZone.SetActive(true);
+
             foreach (var s in soundsToControl)
             {
-                s.volume = 0.1f; 
+                StartCoroutine(ReduceVolume(s));
             }
         }
     }
@@ -21,10 +30,31 @@ public class StormAudioManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            audioReverbZone.SetActive(false);
+
             foreach (var s in soundsToControl)
             {
-                s.volume = 1f;
+                StartCoroutine(IncreaseVolumeUntilFull(s));
             }
         }
     }
+
+    private IEnumerator IncreaseVolumeUntilFull(AudioSource s)
+    {
+        while (s.volume < 1)
+        {
+            s.volume += 0.03f;
+            yield return null;
+        }
+    }
+
+    private IEnumerator ReduceVolume(AudioSource s)
+    {
+        while (s.volume > 0.2)
+        {
+            s.volume -= 0.03f;
+            yield return null;
+        }
+    }
+
 }
