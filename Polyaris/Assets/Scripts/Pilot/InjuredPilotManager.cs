@@ -13,6 +13,7 @@ public class InjuredPilotManager : MonoBehaviour
     public Collider capsuleCollider;
     public Collider boxCollider;
     public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotion locomotionScript;
+    public GameObject windstormToDisable;
 
     private bool canPickUpPilot = false;
 
@@ -31,6 +32,7 @@ public class InjuredPilotManager : MonoBehaviour
     {
         locomotionScript.GetAbility<Jump>().Enabled = false;
         locomotionScript.GetAbility<SpeedChange>().Enabled = false;
+        windstormToDisable.SetActive(false);
 
         capsuleCollider.enabled = false;
 
