@@ -16,6 +16,7 @@ public class InjuredPilotManager : MonoBehaviour
     public GameObject windstormToDisable;
 
     private bool canPickUpPilot = false;
+    private bool canDropOff = false;
 
     private void Update()
     {
@@ -35,6 +36,7 @@ public class InjuredPilotManager : MonoBehaviour
         windstormToDisable.SetActive(false);
 
         capsuleCollider.enabled = false;
+        canDropOff = true;
 
         StartCoroutine("PilotParentingDelay");
     }
@@ -65,6 +67,20 @@ public class InjuredPilotManager : MonoBehaviour
         if (other.CompareTag("Player") && !canPickUpPilot)
         {
             canPickUpPilot = true;
+        }
+
+        if (other.CompareTag("Pilot Drop Off") && canDropOff)
+        {
+            transform.SetParent(null);
+            playerAnimator.SetBool("Injured State", false);
+            locomotionScript.GetAbility<Jump>().Enabled = true;
+            locomotionScript.GetAbility<SpeedChange>().Enabled = true;
+            pilotAnimator.SetTrigger("Release Player");
+            transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+            boxCollider.enabled = false;
+            capsuleCollider.enabled = true;
+
+            canDropOff = false;
         }
     }
 
