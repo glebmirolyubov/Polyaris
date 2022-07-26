@@ -14,6 +14,7 @@ public class InjuredPilotManager : MonoBehaviour
     public Collider boxCollider;
     public Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotion locomotionScript;
     public GameObject windstormToDisable;
+    public Transform rockinChair;
 
     private bool canPickUpPilot = false;
     private bool canDropOff = false;
@@ -62,6 +63,30 @@ public class InjuredPilotManager : MonoBehaviour
         //pilotAnimator.SetTrigger("Stand Up");
 
     }
+
+
+    private IEnumerator WalkToChairDelay()
+    {
+        yield return new WaitForSeconds(4f);
+        pilotAnimator.SetTrigger("Start Walking");
+
+        // Check if the position of the cube and sphere are approximately equal.
+        while (Vector3.Distance(transform.position, rockinChair.position) > 0.4f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(rockinChair.position.x, transform.position.y, rockinChair.position.z), 0.005f);
+            yield return null;
+        }
+
+        pilotAnimator.SetTrigger("Sit Down");
+
+        while (transform.rotation.y < 180f)
+        {
+            var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, 180f, transform.eulerAngles.z);
+            transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * 2f);
+            yield return null;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !canPickUpPilot)
@@ -79,6 +104,7 @@ public class InjuredPilotManager : MonoBehaviour
             transform.localEulerAngles = new Vector3(0f, 0f, 0f);
             boxCollider.enabled = false;
             capsuleCollider.enabled = true;
+            StartCoroutine("WalkToChairDelay");
 
             canDropOff = false;
         }
