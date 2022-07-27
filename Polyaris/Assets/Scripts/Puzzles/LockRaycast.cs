@@ -13,12 +13,12 @@ public class LockRaycast : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                //if (hit.transform.gameObject.CompareTag("Padlock"))
-                //{
-                    //Debug.Log("Touched padlock!");
-                //}
+                if (hit.transform.gameObject.CompareTag("Padlock"))
+                {
+                    Debug.Log("Touched padlock!");
+                }
 
-                //Debug.Log(hit.transform.gameObject.name);
+                Debug.Log(hit.transform.gameObject.name);
             }
         }
     }

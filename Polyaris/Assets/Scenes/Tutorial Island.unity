@@ -17554,7 +17554,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329376144}
-  m_LocalRotation: {x: -0.0038984518, y: 0.9870962, z: 0.15822263, w: 0.024321089}
+  m_LocalRotation: {x: 0.0039684097, y: 0.99039793, z: 0.13509183, w: -0.029093578}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -28818,7 +28818,7 @@ MonoBehaviour:
     mouseX: Mouse X
     mouseY: Mouse Y
     hideTheMouse: 0
-    setLayerInPlayer: 1
+    setLayerInPlayer: 0
     _cursorLockMode: 0
   closedHandTexture: {fileID: 21300000, guid: a201cd7d800b8794884790f098e00d23, type: 3}
   openHandTexture: {fileID: 21300000, guid: 36342030251b87545a5eafc1e2cdd7f2, type: 3}
@@ -35846,7 +35846,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898773204}
-  m_LocalRotation: {x: 0.13690768, y: -0.68866783, z: -0.25818095, w: -0.6635779}
+  m_LocalRotation: {x: -0.19566678, y: -0.85934025, z: -0.21706446, w: 0.41968077}
   m_LocalPosition: {x: -193.2, y: -7.6, z: 803.3}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
@@ -53322,6 +53322,54 @@ PrefabInstance:
     - target: {fileID: 8632190765935476210, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 4.8110003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766177458052, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766177458052, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_TagString
+      value: Padlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766177458054, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: _padlockController
+      value: 
+      objectReference: {fileID: 1874230900}
+    - target: {fileID: 8632190766272165684, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: _padlockController
+      value: 
+      objectReference: {fileID: 1874230900}
+    - target: {fileID: 8632190766272165690, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766272165690, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_TagString
+      value: Padlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766632559788, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766632559788, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_TagString
+      value: Padlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190766632559790, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: _padlockController
+      value: 
+      objectReference: {fileID: 1874230900}
+    - target: {fileID: 8632190767068870561, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: _padlockController
+      value: 
+      objectReference: {fileID: 1874230900}
+    - target: {fileID: 8632190767068870567, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632190767068870567, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
+      propertyPath: m_TagString
+      value: Padlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e75e1de0c91b694ea5e87c531e7157e, type: 3}
@@ -76066,6 +76114,17 @@ MonoBehaviour:
   size: 2
   amplitude: 0.5
   overrideWaterMaterial: {fileID: 0}
+--- !u!114 &1874230900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3912938986532142143, guid: c18c4a818ab5b494a926b8cd613b653e, type: 3}
+  m_PrefabInstance: {fileID: 654262645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140d3e9ccf0075e44b44ece4e0911027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1874539538
 PrefabInstance:
   m_ObjectHideFlags: 0
