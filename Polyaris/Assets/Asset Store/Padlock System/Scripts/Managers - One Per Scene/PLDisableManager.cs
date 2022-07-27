@@ -8,10 +8,11 @@ namespace PadlockSystem
     {
         public static PLDisableManager instance;
 
-        [SerializeField] private FirstPersonController player = null;
+        [SerializeField] private Opsive.UltimateCharacterController.Character.UltimateCharacterLocomotion player = null;
+        [SerializeField] private Opsive.UltimateCharacterController.Camera.CameraController playerCamera = null;
+        [SerializeField] private Opsive.Shared.Input.UnityInput playerInput = null;
         [SerializeField] private PadlockRaycast mainCameraRaycast = null;
-        [SerializeField] private Image crosshair = null;
-        [SerializeField] private Opsive.Shared.Input.UnityInput playerInput;
+        [SerializeField] private Image crosshair = null; 
 
         void Awake()
         {
@@ -23,7 +24,8 @@ namespace PadlockSystem
         {
             if (disable)
             {
-                //player.enabled = false;
+                player.enabled = false;
+                playerCamera.enabled = false;
                 playerInput.enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -35,10 +37,11 @@ namespace PadlockSystem
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                //player.enabled = true;
+                player.enabled = true;
+                playerInput.enabled = true;
+                playerCamera.enabled = true;
                 //mainCameraRaycast.enabled = true;
                 crosshair.enabled = true;
-                playerInput.enabled = true;
             }
         }
     }
