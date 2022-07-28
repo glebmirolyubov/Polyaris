@@ -99,7 +99,7 @@ Material:
     - _AltoCumulusMultiplier: 1
     - _AltoCumulusScale: 0.5
     - _AltocumulusMultiplier: 0
-    - _AltocumulusScale: 0.806
+    - _AltocumulusScale: 1
     - _BorderEffect: 1
     - _BorderHeight: 0.5
     - _BorderSmoothness: 0.928
@@ -109,7 +109,7 @@ Material:
     - _ChemtrailsMultiplier: 0
     - _ChemtrialMoveSpeed: 1
     - _ChemtrialsMoveSpeed: 1
-    - _CirrostratusMoveSpeed: 0.607
+    - _CirrostratusMoveSpeed: 0.5
     - _CirrostratusMoveSpeed1: 0
     - _CirrostratusMultiplier: 0
     - _CirrusMoveSpeed: 0.582
@@ -133,7 +133,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAmount: 30
     - _DetailNormalMapScale: 1
-    - _DetailScale: 1.74
+    - _DetailScale: 2.3
     - _DstBlend: 0
     - _Flatness: 20
     - _Flatness1: 1.9
@@ -144,7 +144,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MainCloudScale: 18.26
+    - _MainCloudScale: 20
     - _MaxCloudCover: 0.3
     - _Metallic: 0
     - _MinCloudCover: 0.3
