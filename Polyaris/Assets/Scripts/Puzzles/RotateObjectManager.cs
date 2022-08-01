@@ -9,7 +9,10 @@ public class RotateObjectManager : MonoBehaviour
 
     private void OnEnable()
     {
+
         transform.localEulerAngles = new Vector3(0f, 90f, 0f);
+
+
     }
 
     private void Update()
