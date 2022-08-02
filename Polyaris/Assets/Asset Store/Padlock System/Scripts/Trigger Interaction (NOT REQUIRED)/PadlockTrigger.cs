@@ -8,7 +8,7 @@ namespace PadlockSystem
         [SerializeField] private PadlockController padlockController = null;
 
         [Header("UI Prompt")]
-        public GameObject interactPrompt;    
+        public GameObject interactPrompt;
 
         private const string playerTag = "Player";
         private bool canUse;

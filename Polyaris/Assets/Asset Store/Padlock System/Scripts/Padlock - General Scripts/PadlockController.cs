@@ -38,6 +38,9 @@ namespace PadlockSystem
         [Header("Unlock Events")]
         [SerializeField] private UnityEvent unlock = null;
 
+        [Header("Close Interact UI")]
+        [SerializeField] private GameObject closePuzzleUI;
+
         void Awake()
         {
             lockAnim = cameraPadlock.GetComponentInChildren<Animator>();
@@ -60,6 +63,7 @@ namespace PadlockSystem
             isShowing = true;    
             mainCamera.transform.localEulerAngles = new Vector3(0, 0, 0);
             InteractSound();
+            closePuzzleUI.SetActive(true);
 
             if (isPadlockTrigger)
             {
@@ -73,6 +77,7 @@ namespace PadlockSystem
             PLDisableManager.instance.DisablePlayer(false);
             cameraPadlock.SetActive(false);
             isShowing = false;
+            closePuzzleUI.SetActive(false);
 
             if (isPadlockTrigger)
             {
